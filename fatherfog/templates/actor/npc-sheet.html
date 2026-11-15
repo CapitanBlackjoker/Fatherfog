@@ -1,0 +1,216 @@
+<form class="{{cssClass}} fatherfog-sheet fatherfog-npc" autocomplete="off">
+
+  <header class="sheet-header">
+    <div class="logo-area">
+      <h1 class="game-title">Fatherfog</h1>
+      <div class="name-box">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'FATHERFOG.Name'}}"/>
+      </div>
+      <div class="npc-category">
+        <input type="text" name="system.category" value="{{system.category}}" placeholder="{{localize 'FATHERFOG.NpcCategory'}}"/>
+      </div>
+    </div>
+
+    <div class="top-resources">
+      <div class="resource-box health {{healthClass}}">
+        <label>{{localize "FATHERFOG.Health"}}</label>
+        <div class="resource-values">
+          <input type="number" value="{{system.health.value}}" data-dtype="Number" class="npc-health-value-input {{#if healthStatus.isEmpty}}hp-empty{{else if healthStatus.isCritical}}hp-critical{{else if healthStatus.isLow}}hp-low{{/if}}"/>
+          <span class="separator">/</span>
+          <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="resource-box defense">
+        <label>{{localize "FATHERFOG.Defense"}}</label>
+        <div class="resource-values">
+          <input type="number" name="system.defense.value" value="{{system.defense.value}}" data-dtype="Number" readonly title="{{localize 'FATHERFOG.DefenseComputed'}}"/>
+        </div>
+        <div class="defense-base" style="font-size:0.75em; opacity:0.7;">
+          base <input type="number" name="system.defense.base" value="{{system.defense.base}}" data-dtype="Number" style="width:2.5em;"/>
+        </div>
+      </div>
+
+      <div class="resource-box hearts">
+        <label>{{localize "FATHERFOG.Hearts"}}</label>
+        <div class="resource-values">
+          <input type="number" value="{{heartsCurrent}}" data-dtype="Number" min="0" max="20" class="npc-hearts-value-input" title="{{localize 'FATHERFOG.HeartsCurrent'}}"/>
+          <span class="separator">/</span>
+          <input type="number" name="system.hearts" value="{{system.hearts}}" data-dtype="Number" min="0" max="20" title="{{localize 'FATHERFOG.HeartsMax'}}"/>
+        </div>
+        <div class="hearts-display" title="{{localize 'FATHERFOG.HeartsHint'}}">{{heartsIcons}}</div>
+        <button type="button" class="ff-reset-hearts" title="{{localize 'FATHERFOG.ResetHearts'}}">{{localize "FATHERFOG.ResetHearts"}}</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-grid">
+    <div class="left-column">
+
+      <section class="panel stats-panel">
+        <h2>{{localize "FATHERFOG.Stats"}}</h2>
+        <div class="stat-row">
+          <label>{{localize "FATHERFOG.Strength"}}</label>
+          <input type="number" name="system.stats.strength.value" value="{{system.stats.strength.value}}" data-dtype="Number"/>
+        </div>
+        <div class="stat-row">
+          <label>{{localize "FATHERFOG.Intellect"}}</label>
+          <input type="number" name="system.stats.intellect.value" value="{{system.stats.intellect.value}}" data-dtype="Number"/>
+        </div>
+        <div class="stat-row">
+          <label>{{localize "FATHERFOG.Will"}}</label>
+          <input type="number" name="system.stats.will.value" value="{{system.stats.will.value}}" data-dtype="Number"/>
+        </div>
+      </section>
+
+      <section class="panel saves-panel">
+        <h2>{{localize "FATHERFOG.Saves"}}</h2>
+        <div class="stat-row">
+          <label>{{localize "FATHERFOG.Body"}}</label>
+          <input type="number" name="system.saves.body.value" value="{{system.saves.body.value}}" data-dtype="Number"/>
+        </div>
+        <div class="stat-row">
+          <label>{{localize "FATHERFOG.Mind"}}</label>
+          <input type="number" name="system.saves.mind.value" value="{{system.saves.mind.value}}" data-dtype="Number"/>
+        </div>
+        <div class="stat-row">
+          <label>{{localize "FATHERFOG.Spirit"}}</label>
+          <input type="number" name="system.saves.spirit.value" value="{{system.saves.spirit.value}}" data-dtype="Number"/>
+        </div>
+      </section>
+
+      <section class="panel motive-panel">
+        <h2>{{localize "FATHERFOG.Motive"}}</h2>
+        <textarea name="system.motive" rows="2">{{system.motive}}</textarea>
+        <h2>{{localize "FATHERFOG.Trick"}}</h2>
+        <textarea name="system.trick" rows="2">{{system.trick}}</textarea>
+      </section>
+
+    </div>
+
+    <div class="right-column">
+
+      <section class="panel attacks-panel">
+        <h2>{{localize "FATHERFOG.Attacks"}}</h2>
+        <p class="hint" style="font-size:0.8em;opacity:0.75;">{{localize "FATHERFOG.AttacksHint"}}</p>
+        <ol class="attacks-list">
+          {{#each attacksList as |atk|}}
+          <li class="attack-row" data-attack-id="{{atk.id}}">
+            <input type="text" name="system.attacks.{{atk.id}}.name" value="{{atk.name}}" placeholder="{{localize 'FATHERFOG.AttackName'}}"/>
+            <label class="dmg-label">{{localize "FATHERFOG.Damage"}}</label>
+            <input type="number" name="system.attacks.{{atk.id}}.damage" value="{{atk.damage}}" data-dtype="Number" style="width:3.5em;"/>
+            <label class="chk"><input type="checkbox" name="system.attacks.{{atk.id}}.ignoresArmor" {{checked atk.ignoresArmor}}/> {{localize "FATHERFOG.IgnoresArmor"}}</label>
+            <input type="text" name="system.attacks.{{atk.id}}.notes" value="{{atk.notes}}" placeholder="{{localize 'FATHERFOG.Notes'}}" class="attack-notes"/>
+            <button type="button" class="npc-attack" title="{{localize 'FATHERFOG.ResolveAttack'}}">⚔️</button>
+            <button type="button" class="delete-attack" title="{{localize 'FATHERFOG.Delete'}}">🗑</button>
+          </li>
+          {{/each}}
+        </ol>
+        <button type="button" class="add-attack">+ {{localize "FATHERFOG.NewAttack"}}</button>
+      </section>
+
+      <section class="panel abilities-panel">
+        <h2>{{localize "FATHERFOG.ThresholdAbilities"}}</h2>
+        <p class="hint" style="font-size:0.8em;opacity:0.75;">{{localize "FATHERFOG.ThresholdHint"}}</p>
+        <ol class="abilities-list">
+          {{#each abilitiesList as |ab|}}
+          <li class="ability-row" data-ability-id="{{ab.id}}">
+            <label>{{localize "FATHERFOG.AtHearts"}}</label>
+            <input type="number" name="system.abilities.{{ab.id}}.atHearts" value="{{ab.atHearts}}" data-dtype="Number" style="width:3em;"/>
+            <input type="text" name="system.abilities.{{ab.id}}.name" value="{{ab.name}}" placeholder="{{localize 'FATHERFOG.AbilityName'}}"/>
+            <input type="text" name="system.abilities.{{ab.id}}.description" value="{{ab.description}}" placeholder="{{localize 'FATHERFOG.Notes'}}" class="ability-desc"/>
+            <button type="button" class="delete-ability" title="{{localize 'FATHERFOG.Delete'}}">🗑</button>
+          </li>
+          {{/each}}
+        </ol>
+        <button type="button" class="add-ability">+ {{localize "FATHERFOG.NewAbility"}}</button>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="inventory-section">
+    <section class="panel inventory-panel">
+      <h2>{{localize "FATHERFOG.Inventory"}}</h2>
+      <p class="inventory-hint">{{localize "FATHERFOG.InventoryDragHint"}}</p>
+
+      {{#if weapons.length}}
+      <div class="item-group">
+        <h3>{{localize "FATHERFOG.Weapons"}}</h3>
+        <ol class="items-list">
+          {{#each weapons as |item|}}
+          <li class="item" data-item-id="{{item.id}}">
+            <div class="item-name">
+              <strong>{{item.name}}</strong>
+              {{#if item.system.equipped}}<span class="equipped-tag">{{localize "FATHERFOG.Equipped"}}</span>{{/if}}
+            </div>
+            <div class="item-controls">
+              <button type="button" class="weapon-attack" title="{{localize 'FATHERFOG.Attack'}}">⚔️</button>
+              <button type="button" class="item-equip">{{#if item.system.equipped}}✓{{else}}○{{/if}}</button>
+              <button type="button" class="item-edit">✎</button>
+              <button type="button" class="item-delete">🗑</button>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+      {{/if}}
+
+      {{#if armors.length}}
+      <div class="item-group">
+        <h3>{{localize "FATHERFOG.Armor"}}</h3>
+        <ol class="items-list">
+          {{#each armors as |item|}}
+          <li class="item" data-item-id="{{item.id}}">
+            <div class="item-name">
+              <strong>{{item.name}}</strong>
+              {{#if item.system.equipped}}<span class="equipped-tag">{{localize "FATHERFOG.Equipped"}}</span>{{/if}}
+              <span class="item-meta">Def +{{item.system.defense}}</span>
+            </div>
+            <div class="item-controls">
+              <button type="button" class="item-equip">{{#if item.system.equipped}}✓{{else}}○{{/if}}</button>
+              <button type="button" class="item-edit">✎</button>
+              <button type="button" class="item-delete">🗑</button>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+      {{/if}}
+    </section>
+  </div>
+
+  <div class="bottom-section">
+    <section class="panel bio-panel">
+      <h2>{{localize "FATHERFOG.Biography"}}</h2>
+      <div class="editor-container">
+        {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
+      </div>
+    </section>
+    <section class="panel notes-panel">
+      <h2>{{localize "FATHERFOG.Notes"}}</h2>
+      <div class="editor-container">
+        {{editor system.notes target="system.notes" button=true owner=owner editable=editable}}
+      </div>
+    </section>
+  </div>
+
+<style>
+  .fatherfog-npc .resource-box.hearts .hearts-display {
+    font-size: 2.0rem;
+    letter-spacing: 0.2rem;
+    color: #8a2010;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0.3rem;
+  }
+  .fatherfog-npc .resource-box.hearts .ff-reset-hearts {
+    font-size: 0.55rem;
+    padding: 0.08rem 0.25rem;
+    width: auto;
+    display: block;
+    margin: 0.2rem auto 0;
+  }
+</style>
+
+</form>

@@ -1,0 +1,56 @@
+{
+  "id": "fatherfog",
+  "title": "Fatherfog",
+  "description": "Fatherfog for Foundry. PC/NPC sheets, character & NPC creation wizards, skills, gear, combat with Hearts.",
+  "version": "0.20.16",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14.369"
+  },
+  "authors": [
+    {
+      "name": "Community"
+    }
+  ],
+  "esmodules": [
+    "fatherfog.mjs"
+  ],
+  "styles": [
+    "styles/fatherfog.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ca",
+      "name": "Català",
+      "path": "lang/ca.json"
+    }
+  ],
+  "gridDistance": 1.5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "hope",
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {}
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "equipment": {},
+      "skill": {},
+      "legacy": {},
+      "trinket": {},
+      "cloak": {},
+      "brooch": {}
+    }
+  },
+  "url": "https://github.com/USUARI/fatherfog",
+  "manifest": "https://github.com/CapitanBlackjoker/fatherfog/releases/latest/download/system.json",
+  "download": "https://github.com/CapitanBlackjoker/fatherfog/releases/download/0.20.2/fatherfog.zip"
+}

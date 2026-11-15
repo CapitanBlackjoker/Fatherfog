@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Caçador maleït",
+    "type": "npc",
+    "img": "icons/creatures/fatherlog/caçador-maleit.webp",
+    "system": {
+      "category": "Cursed Hunter",
+      "stats": {
+        "strength": { "value": 35 },
+        "intellect": { "value": 20 },
+        "will": { "value": 35 }
+      },
+      "saves": {
+        "body": { "value": 30 },
+        "mind": { "value": 20 },
+        "spirit": { "value": 25 }
+      },
+      "health": { "value": 30, "max": 30 },
+      "hope": { "value": 40, "max": 40 },
+      "defense": { "value": 0, "base": 0 },
+      "hearts": 3,
+      "attacks": {
+        "atk1": {
+          "name": "Espasa",
+          "damage": 15,
+          "notes": "Atac a 3 cors",
+          "ignoresArmor": false
+        },
+        "atk2": {
+          "name": "Urpa",
+          "damage": 15,
+          "notes": "Forma de llop (a 2 cors)",
+          "ignoresArmor": false
+        },
+        "atk3": {
+          "name": "Mossegada",
+          "damage": 20,
+          "notes": "Forma de llop (a 2 cors)",
+          "ignoresArmor": false
+        }
+      },
+      "abilities": {
+        "ab1": {
+          "atHearts": 2,
+          "name": "Transformació en bèstia llop",
+          "description": "Es transforma en bèstia llop. Usa Urpa (15) i Mossegada (20)."
+        }
+      },
+      "motive": "Obeir les ordres de la seva bruixa i sobreviure.",
+      "trick": "Feble a la plata. Evita el foc.",
+      "biography": "<p>Caçador maleït del manual (Sample Enemies, p. 47).</p>",
+      "notes": ""
+    }
+  },
+  {
+    "name": "Troll del pont",
+    "type": "npc",
+    "img": "icons/creatures/fatherlog/trol-de-pont.webp",
+    "system": {
+      "category": "Bridge Troll",
+      "stats": {
+        "strength": { "value": 45 },
+        "intellect": { "value": 15 },
+        "will": { "value": 30 }
+      },
+      "saves": {
+        "body": { "value": 40 },
+        "mind": { "value": 15 },
+        "spirit": { "value": 25 }
+      },
+      "health": { "value": 50, "max": 50 },
+      "hope": { "value": 30, "max": 30 },
+      "defense": { "value": 1, "base": 1 },
+      "hearts": 5,
+      "attacks": {
+        "atk1": {
+          "name": "Agafar",
+          "damage": 10,
+          "notes": "A 5 cors",
+          "ignoresArmor": false
+        },
+        "atk2": {
+          "name": "Mossegada",
+          "damage": 20,
+          "notes": "A 5 cors",
+          "ignoresArmor": false
+        },
+        "atk3": {
+          "name": "Urpa",
+          "damage": 10,
+          "notes": "A 2 cors",
+          "ignoresArmor": false
+        }
+      },
+      "abilities": {
+        "ab1": {
+          "atHearts": 2,
+          "name": "Canvi de tàctica",
+          "description": "A 2 cors passa a usar Urpa (10)."
+        }
+      },
+      "motive": "Or i/o menjar.",
+      "trick": "Fàcil d’enganyar i avar. Feble al foc i als atacs de cabra.",
+      "biography": "<p>Troll del pont del manual (Sample Enemies, p. 47).</p>",
+      "notes": ""
+    }
+  },
+  {
+    "name": "Bandoler",
+    "type": "npc",
+    "img": "icons/creatures/fatherlog/bandoler.webp",
+    "system": {
+      "category": "Bandit",
+      "stats": {
+        "strength": { "value": 28 },
+        "intellect": { "value": 25 },
+        "will": { "value": 30 }
+      },
+      "saves": {
+        "body": { "value": 25 },
+        "mind": { "value": 25 },
+        "spirit": { "value": 22 }
+      },
+      "health": { "value": 20, "max": 20 },
+      "hope": { "value": 35, "max": 35 },
+      "defense": { "value": 0, "base": 0 },
+      "hearts": 2,
+      "attacks": {
+        "atk1": {
+          "name": "Arc i fletxa",
+          "damage": 15,
+          "notes": "",
+          "ignoresArmor": false
+        }
+      },
+      "abilities": {},
+      "motive": "Avarícia i supervivència.",
+      "trick": "Evita qualsevol ferida. Fàcil de subornar.",
+      "biography": "<p>Bandoler del manual (Sample Enemies, p. 47).</p>",
+      "notes": ""
+    }
+  },
+  {
+    "name": "Eixam de ratpenats",
+    "type": "npc",
+    "img": "icons/creatures/abilities/bat-swirl-purple.webp",
+    "system": {
+      "category": "Bat Swarm",
+      "stats": {
+        "strength": { "value": 15 },
+        "intellect": { "value": 10 },
+        "will": { "value": 20 }
+      },
+      "saves": {
+        "body": { "value": 15 },
+        "mind": { "value": 10 },
+        "spirit": { "value": 15 }
+      },
+      "health": { "value": 10, "max": 10 },
+      "hope": { "value": 10, "max": 10 },
+      "defense": { "value": 0, "base": 0 },
+      "hearts": 1,
+      "attacks": {
+        "atk1": {
+          "name": "Esgarrapada i mossegada",
+          "damage": 5,
+          "notes": "",
+          "ignoresArmor": false
+        }
+      },
+      "abilities": {},
+      "motive": "Escapar.",
+      "trick": "Evita el foc. No ataca a terra baixa.",
+      "biography": "<p>Eixam de ratpenats del manual (Sample Enemies, p. 47).</p>",
+      "notes": ""
+    }
+  }
+]

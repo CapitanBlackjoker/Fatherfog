@@ -1,0 +1,466 @@
+<form class="{{cssClass}} fatherfog-sheet" autocomplete="off">
+
+  <header class="sheet-header">
+    <div class="logo-area">
+      <h1 class="game-title">Fatherfog</h1>
+      <div class="ornament-line"></div>
+      <div class="name-box">
+        <label class="name-label">{{localize "FATHERFOG.Name"}}</label>
+        <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'FATHERFOG.Name'}}"/>
+      </div>
+    </div>
+
+    <div class="top-resources">
+      <div class="resource-box health {{healthClass}}">
+        <div class="resource-frame">
+          <label class="resource-title">{{localize "FATHERFOG.Health"}}</label>
+          <div class="resource-values">
+            <div class="rv-col">
+              <span class="rv-label">MAX</span>
+              <input type="number" value="{{system.health.max}}" data-dtype="Number" readonly tabindex="-1" class="health-max-display"/>
+            </div>
+            <div class="rv-col">
+              <span class="rv-label">CURRENT</span>
+              <input type="number" value="{{system.health.value}}" data-dtype="Number" class="health-value-input {{#if healthStatus.isEmpty}}hp-empty{{else if healthStatus.isCritical}}hp-critical{{else if healthStatus.isLow}}hp-low{{/if}}"/>
+            </div>
+          </div>
+          {{#if healthStatus.isEmpty}}
+          <div class="health-badge empty">{{localize "FATHERFOG.HealthEmpty"}}</div>
+          {{else if healthStatus.isCritical}}
+          <div class="health-badge critical">{{localize "FATHERFOG.HealthCritical"}}</div>
+          {{else if healthStatus.isLow}}
+          <div class="health-badge low">{{localize "FATHERFOG.HealthLow"}}</div>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="resource-box hope">
+        <div class="resource-frame">
+          <label class="resource-title">{{localize "FATHERFOG.Hope"}}</label>
+          <div class="resource-values">
+            <div class="rv-col">
+              <span class="rv-label">MAX</span>
+              <input type="number" name="system.hope.max" value="{{system.hope.max}}" data-dtype="Number"/>
+            </div>
+            <div class="rv-col">
+              <span class="rv-label">CURRENT</span>
+              <input type="number" name="system.hope.value" value="{{system.hope.value}}" data-dtype="Number"/>
+            </div>
+          </div>
+          <button type="button" class="roll-hope hope-btn" title="{{localize 'FATHERFOG.HopeSave'}}">{{localize "FATHERFOG.HopeSave"}}</button>
+        </div>
+      </div>
+
+      <div class="resource-box defense">
+        <div class="resource-frame">
+          <label class="resource-title">{{localize "FATHERFOG.Defense"}}</label>
+          <div class="resource-values single">
+            <input type="number" name="system.defense.value" value="{{system.defense.value}}" data-dtype="Number" readonly title="{{localize 'FATHERFOG.DefenseComputed'}}"/>
+          </div>
+          <div class="defense-base">
+            base <input type="number" name="system.defense.base" value="{{system.defense.base}}" data-dtype="Number"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="resource-box skillpoints">
+        <div class="resource-frame">
+          <label class="resource-title">{{localize "FATHERFOG.SkillPoints"}}</label>
+          <div class="resource-values single">
+            <input type="number" name="system.skillPoints" value="{{system.skillPoints}}" data-dtype="Number"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item active" data-tab="main">{{localize "FATHERFOG.TabMain"}}</a>
+    <a class="item" data-tab="biography">{{localize "FATHERFOG.TabBiography"}}</a>
+  </nav>
+
+  <div class="sheet-body">
+  <div class="tab main active" data-group="primary" data-tab="main">
+  <div class="main-grid">
+    <div class="left-column">
+
+      <section class="panel attributes-panel">
+        <div class="attrs-header">
+          <h2 class="stats-title">{{localize "FATHERFOG.Stats"}} <span class="hint">{{localize "FATHERFOG.StatsHint"}}</span></h2>
+          <h2 class="saves-title">{{localize "FATHERFOG.Saves"}} <span class="hint">{{localize "FATHERFOG.SavesHint"}}</span></h2>
+        </div>
+        <div class="attrs-bg-container">
+          <div class="attrs-columns">
+            <!-- STATS column (circles) -->
+            <div class="attrs-col stats-col">
+              <div class="attr-slot stat-slot">
+                <label class="attr-label">{{localize "FATHERFOG.Strength"}}</label>
+                <div class="attr-input-wrap circle">
+                  <input type="number" name="system.stats.strength.value" value="{{system.stats.strength.value}}" data-dtype="Number"/>
+                </div>
+                <button type="button" class="roll-stat roll-dice-btn" data-stat="strength" title="{{localize 'FATHERFOG.StrengthCheck'}}">
+                  <img src="systems/fatherfog/assets/icons/DAUS.png" alt="d100" class="roll-dice-icon"/>
+                </button>
+              </div>
+              <div class="attr-slot stat-slot">
+                <label class="attr-label">{{localize "FATHERFOG.Intellect"}}</label>
+                <div class="attr-input-wrap circle">
+                  <input type="number" name="system.stats.intellect.value" value="{{system.stats.intellect.value}}" data-dtype="Number"/>
+                </div>
+                <button type="button" class="roll-stat roll-dice-btn" data-stat="intellect" title="{{localize 'FATHERFOG.IntellectCheck'}}">
+                  <img src="systems/fatherfog/assets/icons/DAUS.png" alt="d100" class="roll-dice-icon"/>
+                </button>
+              </div>
+              <div class="attr-slot stat-slot">
+                <label class="attr-label">{{localize "FATHERFOG.Will"}}</label>
+                <div class="attr-input-wrap circle">
+                  <input type="number" name="system.stats.will.value" value="{{system.stats.will.value}}" data-dtype="Number"/>
+                </div>
+                <button type="button" class="roll-stat roll-dice-btn" data-stat="will" title="{{localize 'FATHERFOG.WillCheck'}}">
+                  <img src="systems/fatherfog/assets/icons/DAUS.png" alt="d100" class="roll-dice-icon"/>
+                </button>
+              </div>
+            </div>
+            <!-- SAVES column (octagons) -->
+            <div class="attrs-col saves-col">
+              <div class="attr-slot save-slot">
+                <label class="attr-label">{{localize "FATHERFOG.Body"}}</label>
+                <div class="attr-input-wrap octagon">
+                  <input type="number" name="system.saves.body.value" value="{{system.saves.body.value}}" data-dtype="Number"/>
+                </div>
+                <button type="button" class="roll-save roll-dice-btn" data-save="body" title="{{localize 'FATHERFOG.BodySave'}}">
+                  <img src="systems/fatherfog/assets/icons/DAUS.png" alt="d100" class="roll-dice-icon"/>
+                </button>
+              </div>
+              <div class="attr-slot save-slot">
+                <label class="attr-label">{{localize "FATHERFOG.Mind"}}</label>
+                <div class="attr-input-wrap octagon">
+                  <input type="number" name="system.saves.mind.value" value="{{system.saves.mind.value}}" data-dtype="Number"/>
+                </div>
+                <button type="button" class="roll-save roll-dice-btn" data-save="mind" title="{{localize 'FATHERFOG.MindSave'}}">
+                  <img src="systems/fatherfog/assets/icons/DAUS.png" alt="d100" class="roll-dice-icon"/>
+                </button>
+              </div>
+              <div class="attr-slot save-slot">
+                <label class="attr-label">{{localize "FATHERFOG.Spirit"}}</label>
+                <div class="attr-input-wrap octagon">
+                  <input type="number" name="system.saves.spirit.value" value="{{system.saves.spirit.value}}" data-dtype="Number"/>
+                </div>
+                <button type="button" class="roll-save roll-dice-btn" data-save="spirit" title="{{localize 'FATHERFOG.SpiritSave'}}">
+                  <img src="systems/fatherfog/assets/icons/DAUS.png" alt="d100" class="roll-dice-icon"/>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel class-panel">
+        <h2>{{localize "FATHERFOG.Class"}}</h2>
+        <div class="locked-field class-display">
+          <span class="locked-value">{{classLabel}}</span>
+        </div>
+        <div class="class-trait-box">
+          <label>{{localize "FATHERFOG.ClassTrait"}}</label>
+          <div class="locked-text trait-display">{{system.class.trait}}</div>
+        </div>
+        {{#if isStranger}}
+        <button type="button" class="ff-odd-presence" title="{{localize 'FATHERFOG.OddPresenceHint'}}">
+          {{localize "FATHERFOG.OddPresenceButton"}}
+        </button>
+        {{/if}}
+      </section>
+
+      <section class="panel identity-panel">
+        <h2>{{localize "FATHERFOG.Identity"}}</h2>
+        <div class="identity-grid">
+          <div class="identity-item cloak-item">
+            <label>{{localize "FATHERFOG.Cloak"}}</label>
+            <div class="locked-field">
+              <span class="locked-value">{{#if system.cloak.color}}{{system.cloak.color}}{{else}}—{{/if}}</span>
+            </div>
+            {{#if system.cloak.meaning}}
+            <div class="locked-text cloak-meaning">{{system.cloak.meaning}}</div>
+            {{/if}}
+          </div>
+          <div class="identity-item">
+            <label>{{localize "FATHERFOG.Brooch"}}</label>
+            <div class="locked-field">
+              <span class="locked-value">{{#if system.brooch}}{{system.brooch}}{{else}}—{{/if}}</span>
+            </div>
+          </div>
+          <div class="identity-item">
+            <label>{{localize "FATHERFOG.Trinket"}}</label>
+            <div class="locked-field">
+              <span class="locked-value">{{#if system.trinket}}{{system.trinket}}{{else}}—{{/if}}</span>
+            </div>
+          </div>
+          <div class="identity-item">
+            <label>{{localize "FATHERFOG.Coin"}}</label>
+            <input type="number" name="system.coin.value" value="{{system.coin.value}}" data-dtype="Number" placeholder="0"/>
+            <div class="locked-text coin-story">{{#if system.coin.story}}{{system.coin.story}}{{else}}—{{/if}}</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOTXILLA (moguda sota Identitat) -->
+      <section class="panel rucksack-panel">
+        <h2>{{localize "FATHERFOG.Rucksack"}}</h2>
+        <div class="rucksack-item">
+          <div class="locked-field rucksack-display">
+            <span class="locked-value">{{rucksackLabel}}</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="right-column">
+
+      <section class="panel skills-panel">
+        <h2>{{localize "FATHERFOG.Skills"}} <span class="hint">{{localize "FATHERFOG.SkillsHint"}}</span></h2>
+
+        <div class="skills-legend">
+          <span class="legend-item common">● {{localize "FATHERFOG.CommonBonus"}}</span>
+          <span class="legend-item expert">● {{localize "FATHERFOG.ExpertBonus"}}</span>
+          <span class="legend-item master">● {{localize "FATHERFOG.MasterBonus"}}</span>
+        </div>
+
+        <div class="skill-tier">
+          <h3 class="tier-title common">{{localize "FATHERFOG.CommonBonus"}}</h3>
+          <div class="skills-list">
+            {{#each system.skills.common as |skill key|}}
+            <div class="skill-row" data-tier="common" data-key="{{key}}">
+              <input type="checkbox" name="system.skills.common.{{key}}.owned" {{checked skill.owned}}/>
+              <input type="text" name="system.skills.common.{{key}}.name" value="{{skill.name}}" placeholder="{{localize 'FATHERFOG.SkillName'}}" class="skill-name"/>
+              <select name="system.skills.common.{{key}}.stat" class="skill-stat">
+                <option value="">-</option>
+                <option value="S" {{#if (eq skill.stat "S")}}selected{{/if}}>S</option>
+                <option value="I" {{#if (eq skill.stat "I")}}selected{{/if}}>I</option>
+                <option value="W" {{#if (eq skill.stat "W")}}selected{{/if}}>W</option>
+              </select>
+            </div>
+            {{/each}}
+          </div>
+          <button type="button" class="add-skill" data-tier="common">{{localize "FATHERFOG.AddCommon"}}</button>
+        </div>
+
+        <div class="skill-tier">
+          <h3 class="tier-title expert">{{localize "FATHERFOG.ExpertBonus"}}</h3>
+          <div class="skills-list">
+            {{#each system.skills.expert as |skill key|}}
+            <div class="skill-row" data-tier="expert" data-key="{{key}}">
+              <input type="checkbox" name="system.skills.expert.{{key}}.owned" {{checked skill.owned}}/>
+              <input type="text" name="system.skills.expert.{{key}}.name" value="{{skill.name}}" placeholder="{{localize 'FATHERFOG.SkillName'}}" class="skill-name"/>
+              <select name="system.skills.expert.{{key}}.stat" class="skill-stat">
+                <option value="">-</option>
+                <option value="S" {{#if (eq skill.stat "S")}}selected{{/if}}>S</option>
+                <option value="I" {{#if (eq skill.stat "I")}}selected{{/if}}>I</option>
+                <option value="W" {{#if (eq skill.stat "W")}}selected{{/if}}>W</option>
+              </select>
+            </div>
+            {{/each}}
+          </div>
+          <button type="button" class="add-skill" data-tier="expert">{{localize "FATHERFOG.AddExpert"}}</button>
+        </div>
+
+        <div class="skill-tier">
+          <h3 class="tier-title master">{{localize "FATHERFOG.MasterBonus"}}</h3>
+          <div class="skills-list">
+            {{#each system.skills.master as |skill key|}}
+            <div class="skill-row" data-tier="master" data-key="{{key}}">
+              <input type="checkbox" name="system.skills.master.{{key}}.owned" {{checked skill.owned}}/>
+              <input type="text" name="system.skills.master.{{key}}.name" value="{{skill.name}}" placeholder="{{localize 'FATHERFOG.SkillName'}}" class="skill-name"/>
+              <select name="system.skills.master.{{key}}.stat" class="skill-stat">
+                <option value="">-</option>
+                <option value="S" {{#if (eq skill.stat "S")}}selected{{/if}}>S</option>
+                <option value="I" {{#if (eq skill.stat "I")}}selected{{/if}}>I</option>
+                <option value="W" {{#if (eq skill.stat "W")}}selected{{/if}}>W</option>
+              </select>
+            </div>
+            {{/each}}
+          </div>
+          <button type="button" class="add-skill" data-tier="master">{{localize "FATHERFOG.AddMaster"}}</button>
+        </div>
+
+        <div class="skill-tier">
+          <h3 class="tier-title unnatural">{{localize "FATHERFOG.Unnatural"}}</h3>
+          <textarea name="system.skills.unnatural" rows="3" placeholder="{{localize 'FATHERFOG.Unnatural'}}">{{system.skills.unnatural}}</textarea>
+        </div>
+      </section>
+
+      <section class="panel legacy-panel">
+        <h2>{{localize "FATHERFOG.LegacyArtifact"}}</h2>
+        {{#if system.legacyArtifact.name}}
+        <div class="locked-field legacy-display">
+          {{#if system.legacyArtifact.number}}
+          <span class="legacy-number">#{{system.legacyArtifact.number}}</span>
+          {{/if}}
+          <span class="locked-value legacy-name-display">{{system.legacyArtifact.name}}</span>
+        </div>
+        <div class="legacy-desc locked-text">{{{system.legacyArtifact.description}}}</div>
+        {{else}}
+        <div class="locked-field legacy-display empty">
+          <span class="locked-value muted">{{localize "FATHERFOG.NoLegacy"}}</span>
+        </div>
+        {{/if}}
+      </section>
+
+           <section class="panel survival-panel">
+        <h2>{{localize "FATHERFOG.Survival"}}</h2>
+
+        <!-- Tres columnes: Beure+Set | Racions+Menjar+Fam | Descansar+Esgotament -->
+        <div class="survival-columns">
+
+          <!-- Columna Beure + Set -->
+          <div class="survival-col drink-col">
+            <div class="resource-row">
+              <div class="inline-inputs">
+                <input type="number" name="system.waterskin.value" value="{{system.waterskin.value}}" data-dtype="Number"/>
+                <span>/</span>
+                <input type="number" name="system.waterskin.max" value="{{system.waterskin.max}}" data-dtype="Number"/>
+              </div>
+              <button type="button" class="ff-drink survival-remedy" title="{{localize 'FATHERFOG.DrinkHint'}}">
+                <img src="systems/fatherfog/assets/icons/BEURE.png" alt="{{localize 'FATHERFOG.Drink'}}" class="remedy-icon"/>
+              </button>
+            </div>
+            <button type="button" class="ff-mark-thirst peril-btn{{#if perils.thirst}} active{{/if}}" title="{{localize 'FATHERFOG.MarkThirst'}}">
+              {{localize "FATHERFOG.Thirst"}}
+            </button>
+          </div>
+
+          <!-- Columna Racions + Menjar + Fam -->
+          <div class="survival-col eat-col">
+            <div class="resource-row">
+              <input type="number" name="system.rations.value" value="{{system.rations.value}}" data-dtype="Number" class="rations-input"/>
+              <button type="button" class="ff-eat survival-remedy" title="{{localize 'FATHERFOG.EatHint'}}">
+                <img src="systems/fatherfog/assets/icons/MENJAR.png" alt="{{localize 'FATHERFOG.Eat'}}" class="remedy-icon"/>
+              </button>
+            </div>
+            <button type="button" class="ff-mark-hunger peril-btn{{#if perils.hunger}} active{{/if}}" title="{{localize 'FATHERFOG.MarkHunger'}}">
+              {{localize "FATHERFOG.Hunger"}}
+            </button>
+          </div>
+
+          <!-- Columna Descansar + Esgotament -->
+          <div class="survival-col rest-col">
+            <button type="button" class="ff-rest survival-remedy rest-btn" title="{{localize 'FATHERFOG.RestHint'}}">
+              <img src="systems/fatherfog/assets/icons/DESCANSAR.png" alt="{{localize 'FATHERFOG.Rest'}}" class="remedy-icon"/>
+            </button>
+            <button type="button" class="ff-mark-exhaustion peril-btn{{#if perils.exhaustion}} active{{/if}}" title="{{localize 'FATHERFOG.MarkExhaustion'}}">
+              {{localize "FATHERFOG.Exhaustion"}}
+            </button>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- INVENTORY / EQUIPMENT -->
+  <div class="inventory-section">
+    <section class="panel inventory-panel">
+      <h2>{{localize "FATHERFOG.Inventory"}}</h2>
+
+      <p class="inventory-hint">{{localize "FATHERFOG.InventoryDragHint"}}</p>
+
+      {{#if weapons.length}}
+      <div class="item-group">
+        <h3>{{localize "FATHERFOG.Weapons"}}</h3>
+        <ol class="items-list">
+          {{#each weapons as |item|}}
+          <li class="item" data-item-id="{{item.id}}">
+            <div class="item-name">
+              <strong>{{item.name}}</strong>
+              {{#if item.system.equipped}}<span class="equipped-tag">{{localize "FATHERFOG.Equipped"}}</span>{{/if}}
+              <span class="item-meta">
+                {{item.system.weaponType}} · DMG {{item.system.damageType}}
+                {{#if item.system.ignoresArmor}} · {{localize "FATHERFOG.IgnoresArmor"}}{{/if}}
+                {{#if item.system.grantsDefense}} · +{{item.system.grantsDefense}} Def{{/if}}
+              </span>
+            </div>
+            <div class="item-controls">
+              <button type="button" class="weapon-attack" title="{{localize 'FATHERFOG.Attack'}}">⚔️</button>
+              <button type="button" class="item-equip" title="{{localize 'FATHERFOG.ToggleEquip'}}">{{#if item.system.equipped}}✓{{else}}○{{/if}}</button>
+              <button type="button" class="item-edit" title="{{localize 'FATHERFOG.Edit'}}">✎</button>
+              <button type="button" class="item-delete" title="{{localize 'FATHERFOG.Delete'}}">🗑</button>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+      {{/if}}
+
+      {{#if armors.length}}
+      <div class="item-group">
+        <h3>{{localize "FATHERFOG.Armor"}}</h3>
+        <ol class="items-list">
+          {{#each armors as |item|}}
+          <li class="item" data-item-id="{{item.id}}">
+            <div class="item-name">
+              <strong>{{item.name}}</strong>
+              {{#if item.system.equipped}}<span class="equipped-tag">{{localize "FATHERFOG.Equipped"}}</span>{{/if}}
+              <span class="item-meta">Defense +{{item.system.defense}}
+                {{#if item.system.stealthPenalty}} · {{localize "FATHERFOG.StealthPenalty"}}{{/if}}
+              </span>
+            </div>
+            <div class="item-controls">
+              <button type="button" class="item-equip" title="{{localize 'FATHERFOG.ToggleEquip'}}">{{#if item.system.equipped}}✓{{else}}○{{/if}}</button>
+              <button type="button" class="item-edit" title="{{localize 'FATHERFOG.Edit'}}">✎</button>
+              <button type="button" class="item-delete" title="{{localize 'FATHERFOG.Delete'}}">🗑</button>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+      {{/if}}
+
+      {{#if equipment.length}}
+      <div class="item-group">
+        <h3>{{localize "FATHERFOG.Equipment"}}</h3>
+        <ol class="items-list">
+          {{#each equipment as |item|}}
+          <li class="item" data-item-id="{{item.id}}">
+            <div class="item-name">
+              <strong>{{item.name}}</strong>
+              {{#if item.system.equipped}}<span class="equipped-tag">{{localize "FATHERFOG.Equipped"}}</span>{{/if}}
+              <span class="item-meta">×{{item.system.quantity}}</span>
+            </div>
+            <div class="item-controls">
+              <button type="button" class="item-equip" title="{{localize 'FATHERFOG.ToggleEquip'}}">{{#if item.system.equipped}}✓{{else}}○{{/if}}</button>
+              <button type="button" class="item-edit" title="{{localize 'FATHERFOG.Edit'}}">✎</button>
+              <button type="button" class="item-delete" title="{{localize 'FATHERFOG.Delete'}}">🗑</button>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+      {{/if}}
+
+      {{#unless hasInventory}}
+      <p class="empty-inventory">{{localize "FATHERFOG.NoItems"}}</p>
+      {{/unless}}
+    </section>
+  </div>
+  </div><!-- end tab main -->
+
+  <div class="tab biography" data-group="primary" data-tab="biography">
+    <div class="bottom-section bio-tab-content">
+      <section class="panel bio-panel">
+        <h2>{{localize "FATHERFOG.Biography"}}</h2>
+        <div class="editor-container bio-editor">
+          {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
+        </div>
+      </section>
+      <section class="panel notes-panel">
+        <h2>{{localize "FATHERFOG.Notes"}}</h2>
+        <div class="editor-container bio-editor">
+          {{editor system.notes target="system.notes" button=true owner=owner editable=editable}}
+        </div>
+      </section>
+    </div>
+  </div><!-- end tab biography -->
+  </div><!-- end sheet-body -->
+
+</form>
+

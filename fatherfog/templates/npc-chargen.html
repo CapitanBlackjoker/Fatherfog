@@ -1,0 +1,159 @@
+<form class="fatherfog-chargen fatherfog-npc-chargen" autocomplete="off">
+  <nav class="chargen-steps">
+    {{#each stepDots}}
+      <span class="step-dot {{#if active}}active{{/if}} {{#if done}}done{{/if}}" title="{{label}}">{{label}}</span>
+    {{/each}}
+  </nav>
+
+  <div class="chargen-body">
+
+    {{#if isStep0}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}1. Identitat{{else}}1. Identity{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Nom i categoria (Bandit, Troll, Bèstia de la Boira…).{{else}}Name and category (Bandit, Troll, Fog Beast…).{{/if}}</p>
+      <label>{{#if isCa}}Nom{{else}}Name{{/if}}
+        <input type="text" name="npc-name" value="{{data.name}}" placeholder="{{#if isCa}}Ex: Caçador maleït{{else}}E.g. Cursed Hunter{{/if}}"/>
+      </label>
+      <label style="margin-top:0.5rem;display:block;">{{#if isCa}}Categoria / tipus{{else}}Category / type{{/if}}
+        <input type="text" name="npc-category" value="{{data.category}}" placeholder="{{#if isCa}}Ex: Bandoler{{else}}E.g. Bandit{{/if}}"/>
+      </label>
+    </section>
+    {{/if}}
+
+    {{#if isStep1}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}2. Cors (Hearts){{else}}2. Hearts{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Cada 10 de dany a la mateixa ronda = −1 Cor (manual p.46). La majoria fugen amb 1 Cor.{{else}}Every 10 damage in one round = −1 Heart (rules p.46). Most flee at 1 Heart.{{/if}}</p>
+      <label>{{#if isCa}}Cors màxims{{else}}Maximum Hearts{{/if}}
+        <input type="number" name="npc-hearts" value="{{data.hearts}}" min="1" max="20"/>
+      </label>
+      <p class="hint" style="margin-top:0.75rem;">{{#if isCa}}Salut opcional (referència; el combat usa Cors):{{else}}Optional Health (reference; combat uses Hearts):{{/if}}</p>
+      <div class="stat-grid">
+        <label>{{#if isCa}}Salut actual{{else}}Health{{/if}} <input type="number" name="npc-health" value="{{data.health}}" min="0"/></label>
+        <label>{{#if isCa}}Salut màx.{{else}}Health max{{/if}} <input type="number" name="npc-health-max" value="{{data.healthMax}}" min="0"/></label>
+        <label>{{#if isCa}}Defensa{{else}}Defense{{/if}} <input type="number" name="npc-defense" value="{{data.defense}}" min="0"/></label>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if isStep2}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}3. Stats i Salvacions (opcional){{else}}3. Stats &amp; Saves (optional){{/if}}</h2>
+      <p class="hint">{{#if isCa}}Només referència; el Guia no tira daus.{{else}}Reference only; the Guide never rolls.{{/if}}</p>
+      <div class="stat-grid">
+        <label>STR <input type="number" name="stat-strength" value="{{data.stats.strength}}" min="0" max="100"/></label>
+        <label>INT <input type="number" name="stat-intellect" value="{{data.stats.intellect}}" min="0" max="100"/></label>
+        <label>WIL <input type="number" name="stat-will" value="{{data.stats.will}}" min="0" max="100"/></label>
+      </div>
+      <div class="stat-grid">
+        <label>{{#if isCa}}Cos{{else}}Body{{/if}} <input type="number" name="save-body" value="{{data.saves.body}}" min="0" max="100"/></label>
+        <label>{{#if isCa}}Ment{{else}}Mind{{/if}} <input type="number" name="save-mind" value="{{data.saves.mind}}" min="0" max="100"/></label>
+        <label>{{#if isCa}}Esperit{{else}}Spirit{{/if}} <input type="number" name="save-spirit" value="{{data.saves.spirit}}" min="0" max="100"/></label>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if isStep3}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}4. Atacs{{else}}4. Attacks{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Dany base + Bits de la tirada del jugador. Els enemics no fallen mai.{{else}}Base damage + Bits from the player’s roll. Enemies never miss.{{/if}}</p>
+      <ol class="bought-skills" style="margin-bottom:0.75rem;">
+        {{#each data.attacks}}
+        <li>
+          <strong>{{name}}</strong> — {{damage}}{{#if ignoresArmor}} ({{#if ../isCa}}ignora armadura{{else}}ignores armor{{/if}}){{/if}}
+          {{#if notes}} <em style="opacity:0.8;">{{notes}}</em>{{/if}}
+          <button type="button" data-action="remove-attack" data-index="{{@index}}" title="{{#if ../isCa}}Esborrar{{else}}Remove{{/if}}"><i class="fas fa-times"></i></button>
+        </li>
+        {{/each}}
+      </ol>
+      <div class="flavor-manual" style="border:1px solid #1a120a;padding:0.5rem;margin-bottom:0.5rem;">
+        <label>{{#if isCa}}Nom de l’atac{{else}}Attack name{{/if}}
+          <input type="text" name="atk-name" value="{{draftAttack.name}}" placeholder="{{#if isCa}}Ex: Espasa{{else}}E.g. Sword{{/if}}"/>
+        </label>
+        <label style="margin-top:0.35rem;display:block;">{{#if isCa}}Dany base{{else}}Base damage{{/if}}
+          <input type="number" name="atk-damage" value="{{draftAttack.damage}}" min="0"/>
+        </label>
+        <label style="margin-top:0.35rem;display:block;">
+          <input type="checkbox" name="atk-ignores" {{#if draftAttack.ignoresArmor}}checked{{/if}}/>
+          {{#if isCa}}Ignora armadura{{else}}Ignores armor{{/if}}
+        </label>
+        <label style="margin-top:0.35rem;display:block;">{{#if isCa}}Notes{{else}}Notes{{/if}}
+          <input type="text" name="atk-notes" value="{{draftAttack.notes}}" placeholder="{{#if isCa}}Ex: A 2 cors{{else}}E.g. At 2 hearts{{/if}}"/>
+        </label>
+        <button type="button" data-action="add-attack" style="margin-top:0.5rem;"><i class="fas fa-plus"></i> {{#if isCa}}Afegir atac{{else}}Add attack{{/if}}</button>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if isStep4}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}5. Habilitats per llindar{{else}}5. Threshold abilities{{/if}}</h2>
+      <p class="hint">{{#if isCa}}S’activen quan els cors baixen a un valor (manual p.46).{{else}}Trigger when hearts fall to a value (rules p.46).{{/if}}</p>
+      <ol class="bought-skills" style="margin-bottom:0.75rem;">
+        {{#each data.abilities}}
+        <li>
+          <strong>{{#if ../isCa}}A {{atHearts}} cors{{else}}At {{atHearts}} hearts{{/if}}:</strong> {{name}}
+          {{#if description}} — <em>{{description}}</em>{{/if}}
+          <button type="button" data-action="remove-ability" data-index="{{@index}}"><i class="fas fa-times"></i></button>
+        </li>
+        {{/each}}
+      </ol>
+      <div class="flavor-manual" style="border:1px solid #1a120a;padding:0.5rem;">
+        <label>{{#if isCa}}A cors{{else}}At hearts{{/if}}
+          <input type="number" name="ab-hearts" value="{{draftAbility.atHearts}}" min="0" max="20"/>
+        </label>
+        <label style="margin-top:0.35rem;display:block;">{{#if isCa}}Nom{{else}}Name{{/if}}
+          <input type="text" name="ab-name" value="{{draftAbility.name}}" placeholder="{{#if isCa}}Ex: Transformació{{else}}E.g. Transformation{{/if}}"/>
+        </label>
+        <label style="margin-top:0.35rem;display:block;">{{#if isCa}}Descripció{{else}}Description{{/if}}
+          <input type="text" name="ab-desc" value="{{draftAbility.description}}"/>
+        </label>
+        <button type="button" data-action="add-ability" style="margin-top:0.5rem;"><i class="fas fa-plus"></i> {{#if isCa}}Afegir habilitat{{else}}Add ability{{/if}}</button>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if isStep5}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}6. Motiu i Truc{{else}}6. Motive &amp; Trick{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Motiu: per què combat. Truc: debilitats o exploits (manual p.46).{{else}}Motive: why it fights. Trick: weaknesses or exploits (rules p.46).{{/if}}</p>
+      <label>{{#if isCa}}Motiu{{else}}Motive{{/if}}
+        <textarea name="npc-motive" rows="2" style="width:100%;">{{data.motive}}</textarea>
+      </label>
+      <label style="margin-top:0.5rem;display:block;">{{#if isCa}}Truc / debilitat{{else}}Trick / weakness{{/if}}
+        <textarea name="npc-trick" rows="2" style="width:100%;">{{data.trick}}</textarea>
+      </label>
+    </section>
+    {{/if}}
+
+    {{#if isStep6}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}7. Acabar{{else}}7. Finish{{/if}}</h2>
+      <div class="summary">
+        <p><strong>{{#if isCa}}Nom{{else}}Name{{/if}}:</strong> {{data.name}}</p>
+        <p><strong>{{#if isCa}}Categoria{{else}}Category{{/if}}:</strong> {{data.category}}</p>
+        <p><strong>{{#if isCa}}Cors{{else}}Hearts{{/if}}:</strong> {{data.hearts}}</p>
+        <p><strong>{{#if isCa}}Atacs{{else}}Attacks{{/if}}:</strong> {{data.attacks.length}}</p>
+        <p><strong>{{#if isCa}}Habilitats{{else}}Abilities{{/if}}:</strong> {{data.abilities.length}}</p>
+        <p><strong>{{#if isCa}}Motiu{{else}}Motive{{/if}}:</strong> {{data.motive}}</p>
+        <p><strong>{{#if isCa}}Truc{{else}}Trick{{/if}}:</strong> {{data.trick}}</p>
+      </div>
+      <button type="button" data-action="finish" class="finish-btn">
+        <i class="fas fa-check"></i> {{#if isCa}}Crear PNJ{{else}}Create NPC{{/if}}
+      </button>
+    </section>
+    {{/if}}
+
+  </div>
+
+  <footer class="chargen-footer">
+    {{#unless isStep0}}
+    <button type="button" data-action="prev"><i class="fas fa-arrow-left"></i> {{#if isCa}}Anterior{{else}}Back{{/if}}</button>
+    {{else}}
+    <span></span>
+    {{/unless}}
+    {{#unless isStep6}}
+    <button type="button" data-action="next">{{#if isCa}}Següent{{else}}Next{{/if}} <i class="fas fa-arrow-right"></i></button>
+    {{/unless}}
+  </footer>
+</form>

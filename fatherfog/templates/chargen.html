@@ -1,0 +1,227 @@
+<form class="fatherfog-chargen" autocomplete="off">
+  <nav class="chargen-steps">
+    {{#each stepDots}}
+      <span class="step-dot {{#if active}}active{{/if}} {{#if done}}done{{/if}}" title="{{label}}">{{label}}</span>
+    {{/each}}
+  </nav>
+
+  <div class="chargen-body">
+
+    {{#if isStep0}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}1. Estadístiques{{else}}1. Stats{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Tira 6d10 o escriu els valors a mà (mitjana ≈ 30).{{else}}Roll 6d10 or type values manually (average ≈ 30).{{/if}}</p>
+      <div class="stat-grid">
+        <label>STR / FUE <input type="number" name="stat-strength" value="{{data.stats.strength}}" min="0" max="75"/></label>
+        <label>INT <input type="number" name="stat-intellect" value="{{data.stats.intellect}}" min="0" max="75"/></label>
+        <label>WIL / VOL <input type="number" name="stat-will" value="{{data.stats.will}}" min="0" max="75"/></label>
+      </div>
+      <button type="button" data-action="roll-stats"><i class="fas fa-dice"></i> {{#if isCa}}Tirar 6d10 × 3{{else}}Roll 6d10 × 3{{/if}}</button>
+    </section>
+    {{/if}}
+
+    {{#if isStep1}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}2. Salvacions{{else}}2. Saves{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Tira 5d10 o escriu els valors a mà (mitjana ≈ 25).{{else}}Roll 5d10 or type values manually (average ≈ 25).{{/if}}</p>
+      <div class="stat-grid">
+        <label>Body / Cos <input type="number" name="save-body" value="{{data.saves.body}}" min="0" max="75"/></label>
+        <label>Mind / Ment <input type="number" name="save-mind" value="{{data.saves.mind}}" min="0" max="75"/></label>
+        <label>Spirit / Esperit <input type="number" name="save-spirit" value="{{data.saves.spirit}}" min="0" max="75"/></label>
+      </div>
+      <button type="button" data-action="roll-saves"><i class="fas fa-dice"></i> {{#if isCa}}Tirar 5d10 × 3{{else}}Roll 5d10 × 3{{/if}}</button>
+    </section>
+    {{/if}}
+
+    {{#if isStep2}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}3. Classe{{else}}3. Class{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Tria la classe (obligatori).{{else}}Choose a class (required).{{/if}}</p>
+      <select name="class-value">
+        <option value="worker" {{#if classWorker}}selected{{/if}}>Worker / Treballador</option>
+        <option value="philosopher" {{#if classPhilosopher}}selected{{/if}}>Philosopher / Filòsof</option>
+        <option value="hunter" {{#if classHunter}}selected{{/if}}>Hunter / Caçador</option>
+        <option value="stranger" {{#if classStranger}}selected{{/if}}>Stranger / Estranger</option>
+      </select>
+      {{#if classChoiceGroups.length}}
+      <div class="class-choices">
+        <p class="hint">{{#if isCa}}Tria una habilitat de cada grup:{{else}}Pick one skill from each group:{{/if}}</p>
+        {{#each classChoiceGroups}}
+        <label>
+          <select class="class-choice" data-index="{{index}}">
+            <option value="">—</option>
+            {{#each options}}
+            <option value="{{id}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+            {{/each}}
+          </select>
+        </label>
+        {{/each}}
+      </div>
+      {{/if}}
+    </section>
+    {{/if}}
+
+    {{#if isStep3}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}4. Motxilla{{else}}4. Rucksack{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Tria un paquet de motxilla.{{else}}Choose a rucksack package.{{/if}}</p>
+      <select name="rucksack">
+        <option value="">—</option>
+        {{#each rucksackOptions}}
+        <option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+        {{/each}}
+      </select>
+    </section>
+    {{/if}}
+
+    {{#if isStep4}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}5. Personal{{else}}5. Personal{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Tria a mà o tira cada camp per separat (o tot de cop).{{else}}Pick manually or roll each field (or all at once).{{/if}}</p>
+      <button type="button" data-action="roll-flavor"><i class="fas fa-dice"></i> {{#if isCa}}Tirar tot{{else}}Roll all{{/if}}</button>
+
+      <div class="flavor-manual">
+        <div class="flavor-row">
+          <label>{{#if isCa}}Capa{{else}}Cloak{{/if}}
+            <select name="cloak-color">
+              <option value="">—</option>
+              {{#each cloakOptions}}
+              <option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+          <button type="button" data-action="roll-cloak" title="{{#if isCa}}Tirar capa{{else}}Roll cloak{{/if}}"><i class="fas fa-dice"></i></button>
+        </div>
+        <p class="hint cloak-meaning">{{data.cloak.meaning}}</p>
+
+        <div class="flavor-row">
+          <label>{{#if isCa}}Fermall{{else}}Brooch{{/if}}
+            <select name="brooch" data-ff-field="brooch">
+              <option value="">—</option>
+              {{#each broochOptions}}
+              <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+          <button type="button" data-action="roll-brooch" title="{{#if isCa}}Tirar fermall{{else}}Roll brooch{{/if}}"><i class="fas fa-dice"></i></button>
+        </div>
+        {{#if broochIsPersonal}}
+        <div class="personal-input-box" id="ff-brooch-custom-box">
+          <label>{{#if isCa}}Escriu el fermall que vols{{else}}Write the brooch you want{{/if}}
+            <input type="text" name="brooch-custom" value="{{data.broochCustom}}" placeholder="{{#if isCa}}Ex: un anell de ferro rovellat…{{else}}E.g. a rusty iron ring…{{/if}}"/>
+          </label>
+        </div>
+        {{/if}}
+
+        <div class="flavor-row">
+          <label>{{#if isCa}}Record{{else}}Trinket{{/if}}
+            <select name="trinket" data-ff-field="trinket">
+              <option value="">—</option>
+              {{#each trinketOptions}}
+              <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+          <button type="button" data-action="roll-trinket" title="{{#if isCa}}Tirar record{{else}}Roll trinket{{/if}}"><i class="fas fa-dice"></i></button>
+        </div>
+        {{#if trinketIsPersonal}}
+        <div class="personal-input-box" id="ff-trinket-custom-box">
+          <label>{{#if isCa}}Escriu el record que vols{{else}}Write the trinket you want{{/if}}
+            <input type="text" name="trinket-custom" value="{{data.trinketCustom}}" placeholder="{{#if isCa}}Ex: una pedreta del riu…{{else}}E.g. a river pebble…{{/if}}"/>
+          </label>
+        </div>
+        {{/if}}
+
+        <div class="flavor-row">
+          <label>{{#if isCa}}Història de monedes{{else}}Coin story{{/if}}
+            <select name="coin-index">
+              <option value="">—</option>
+              {{#each coinOptions}}
+              <option value="{{index}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+          <button type="button" data-action="roll-coin" title="{{#if isCa}}Tirar monedes{{else}}Roll coin{{/if}}"><i class="fas fa-dice"></i></button>
+        </div>
+        <p class="story"><em>{{data.coin.story}}</em></p>
+        <p><strong>{{#if isCa}}Monedes{{else}}Coin{{/if}}:</strong> {{data.coin.value}}</p>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if isStep5}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}6. Artefacte Llegendari{{else}}6. Legacy Artifact{{/if}}</h2>
+      <p class="hint">{{#if isCa}}Tira o tria de la llista (opcional).{{else}}Roll or pick from the list (optional).{{/if}}</p>
+      <button type="button" data-action="roll-legacy"><i class="fas fa-dice"></i> {{#if isCa}}Tirar artefacte{{else}}Roll artifact{{/if}}</button>
+      <select name="legacy-id">
+        <option value="">— {{#if isCa}}Cap{{else}}None{{/if}} —</option>
+        {{#each legacyList}}
+        <option value="{{id}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+        {{/each}}
+      </select>
+      {{#if data.legacy.name}}
+      <div class="legacy-preview">
+        <h3>{{data.legacy.name}}</h3>
+        <div>{{{data.legacy.description}}}</div>
+      </div>
+      {{/if}}
+    </section>
+    {{/if}}
+
+    {{#if isStep6}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}7. Habilitats{{else}}7. Skills{{/if}}</h2>
+      <p>{{#if isCa}}Punts disponibles:{{else}}Available points:{{/if}} <strong>{{remainingPoints}}</strong> (5 per habilitat)</p>
+      {{#if boughtSkills.length}}
+      <ul class="bought-skills">
+        {{#each boughtSkills}}
+        <li>{{name}} <button type="button" data-action="remove-skill" data-skill-id="{{id}}"><i class="fas fa-times"></i></button></li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      {{#if canBuy}}
+      <div class="buyable-list">
+        {{#each buyableSkills}}
+        <button type="button" data-action="buy-skill" data-skill-id="{{id}}" class="skill-buy-btn">+ {{name}}</button>
+        {{/each}}
+      </div>
+      {{else}}
+      <p class="hint">{{#if isCa}}No queden prou punts o no hi ha més common disponibles.{{else}}Not enough points or no more common skills available.{{/if}}</p>
+      {{/if}}
+    </section>
+    {{/if}}
+
+    {{#if isStep7}}
+    <section class="chargen-step">
+      <h2>{{#if isCa}}8. Acabar{{else}}8. Finish{{/if}}</h2>
+      <label>{{#if isCa}}Nom del personatge{{else}}Character name{{/if}}
+        <input type="text" name="char-name" value="{{data.name}}" placeholder="{{#if isCa}}Escriu el nom…{{else}}Enter name…{{/if}}" required/>
+      </label>
+      <div class="summary">
+        <p><strong>{{#if isCa}}Classe{{else}}Class{{/if}}:</strong> {{data.classValue}}</p>
+        <p><strong>STR/INT/WIL:</strong> {{data.stats.strength}} / {{data.stats.intellect}} / {{data.stats.will}}</p>
+        <p><strong>{{#if isCa}}Salvacions{{else}}Saves{{/if}}:</strong> {{data.saves.body}} / {{data.saves.mind}} / {{data.saves.spirit}}</p>
+        <p><strong>Hope max:</strong> {{data.hopeMax}}</p>
+        <p><strong>{{#if isCa}}Monedes{{else}}Coin{{/if}}:</strong> {{data.coin.value}}</p>
+        <p><strong>{{#if isCa}}Motxilla{{else}}Rucksack{{/if}}:</strong> {{data.rucksack}}</p>
+      </div>
+      <button type="button" data-action="finish" class="finish-btn">
+        <i class="fas fa-check"></i> {{#if isCa}}Crear fitxa i jugar!{{else}}Create sheet & play!{{/if}}
+      </button>
+    </section>
+    {{/if}}
+
+  </div>
+
+  <footer class="chargen-footer">
+    {{#unless isStep0}}
+    <button type="button" data-action="prev"><i class="fas fa-arrow-left"></i> {{#if isCa}}Anterior{{else}}Back{{/if}}</button>
+    {{else}}
+    <span></span>
+    {{/unless}}
+    {{#unless isStep7}}
+    <button type="button" data-action="next">{{#if isCa}}Següent{{else}}Next{{/if}} <i class="fas fa-arrow-right"></i></button>
+    {{/unless}}
+  </footer>
+</form>

@@ -1,0 +1,344 @@
+{
+  "weapons": [
+    {
+      "name": "Hand Weapon",
+      "type": "weapon",
+      "system": {
+        "description": "One-handed Weapon.",
+        "price": 100,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Great Weapon",
+      "type": "weapon",
+      "system": {
+        "description": "Two-handed, heavy Weapon. Damage +10 on all successful hits.",
+        "price": 150,
+        "availability": 60,
+        "damageType": "wil+10",
+        "weaponType": "melee",
+        "hands": 2
+      }
+    },
+    {
+      "name": "Hand Weapon (master-crafted)",
+      "type": "weapon",
+      "system": {
+        "description": "Finely crafted one-handed Weapon. Advantage [+] on Combat rolls.",
+        "price": 750,
+        "availability": 20,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1,
+        "advantageOnCombat": true
+      }
+    },
+    {
+      "name": "Knuckle Dusters",
+      "type": "weapon",
+      "system": {
+        "description": "Close quarters only.",
+        "price": 100,
+        "availability": 40,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1,
+        "closeQuartersOnly": true
+      }
+    },
+    {
+      "name": "Prybar",
+      "type": "weapon",
+      "system": {
+        "description": "Tinkering +5%.",
+        "price": 50,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1,
+        "skillBonus": "Tinkering +5%"
+      }
+    },
+    {
+      "name": "Spear",
+      "type": "weapon",
+      "system": {
+        "description": "Can be used as a Ranged Weapon.",
+        "price": 25,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Staff",
+      "type": "weapon",
+      "system": {
+        "description": "+1 Defense.",
+        "price": 10,
+        "availability": 98,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1,
+        "grantsDefense": 1
+      }
+    },
+    {
+      "name": "Surgical Knife",
+      "type": "weapon",
+      "system": {
+        "description": "-10 Surgery +10%.",
+        "price": 50,
+        "availability": 80,
+        "damageType": "wil-10",
+        "weaponType": "melee",
+        "hands": 1,
+        "skillBonus": "Surgery +10%"
+      }
+    },
+    {
+      "name": "Unarmed",
+      "type": "weapon",
+      "system": {
+        "description": "Close quarters only. DMG = Bit of WIL.",
+        "price": 0,
+        "availability": 100,
+        "damageType": "bit",
+        "weaponType": "melee",
+        "hands": 1,
+        "closeQuartersOnly": true
+      }
+    },
+    {
+      "name": "Bow",
+      "type": "weapon",
+      "system": {
+        "description": "Half round reload time with a quiver.",
+        "price": 100,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "ranged",
+        "hands": 2,
+        "reload": 1
+      }
+    },
+    {
+      "name": "Crossbow",
+      "type": "weapon",
+      "system": {
+        "description": "2 round reload time with a quiver.",
+        "price": 200,
+        "availability": 60,
+        "damageType": "wil",
+        "weaponType": "ranged",
+        "hands": 2,
+        "reload": 4
+      }
+    },
+    {
+      "name": "Rifle",
+      "type": "weapon",
+      "system": {
+        "description": "Firearm. Ignores Armor.",
+        "price": 500,
+        "availability": 40,
+        "damageType": "wil",
+        "weaponType": "ranged",
+        "hands": 2,
+        "reload": 4,
+        "ignoresArmor": true
+      }
+    },
+    {
+      "name": "Revolver",
+      "type": "weapon",
+      "system": {
+        "description": "Firearm. Ignores Armor. 1 round reload with ammo belt.",
+        "price": 1500,
+        "availability": 1,
+        "damageType": "wil",
+        "weaponType": "ranged",
+        "hands": 1,
+        "reload": 2,
+        "ignoresArmor": true
+      }
+    },
+    {
+      "name": "Blunderbuss",
+      "type": "weapon",
+      "system": {
+        "description": "Firearm. 30 foot blast radius.",
+        "price": 500,
+        "availability": 40,
+        "damageType": "wil+20",
+        "weaponType": "ranged",
+        "hands": 2,
+        "reload": 4
+      }
+    },
+    {
+      "name": "Bomb",
+      "type": "weapon",
+      "system": {
+        "description": "1d100 foot blast radius.",
+        "price": 70,
+        "availability": 40,
+        "damageType": "wilx10",
+        "weaponType": "thrown",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Whip",
+      "type": "weapon",
+      "system": {
+        "description": "Choose to damage or entangle. Useless when adjacent. -10.",
+        "price": 50,
+        "availability": 60,
+        "damageType": "wil-10",
+        "weaponType": "melee",
+        "hands": 1,
+        "damageBonus": -10,
+        "special": "Can entangle instead of damage. Useless when adjacent."
+      }
+    },
+    {
+      "name": "Throwing Dagger/Star",
+      "type": "weapon",
+      "system": {
+        "description": "Improvised Weapon if used in melee.",
+        "price": 50,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "thrown",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Sling",
+      "type": "weapon",
+      "system": {
+        "description": "Requires Weapon Specialty (Sling).",
+        "price": 15,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "ranged",
+        "hands": 1,
+        "reload": 2
+      }
+    },
+    {
+      "name": "Net",
+      "type": "weapon",
+      "system": {
+        "description": "Immobilizes the target.",
+        "price": 50,
+        "availability": 80,
+        "damageType": "none",
+        "weaponType": "thrown",
+        "hands": 1,
+        "special": "Immobilizes the target."
+      }
+    },
+    {
+      "name": "Short Sword",
+      "type": "weapon",
+      "system": {
+        "description": "Common one-handed blade.",
+        "price": 100,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Rapier",
+      "type": "weapon",
+      "system": {
+        "description": "Light thrusting sword.",
+        "price": 100,
+        "availability": 70,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Handaxe",
+      "type": "weapon",
+      "system": {
+        "description": "Can fell foliage and even trees. Hand Weapon.",
+        "price": 100,
+        "availability": 80,
+        "damageType": "wil",
+        "weaponType": "melee",
+        "hands": 1
+      }
+    },
+    {
+      "name": "Great Hammer",
+      "type": "weapon",
+      "system": {
+        "description": "Heavy two-handed hammer.",
+        "price": 150,
+        "availability": 60,
+        "damageType": "wil+10",
+        "weaponType": "melee",
+        "hands": 2
+      }
+    }
+  ],
+  "armors": [
+    {
+      "name": "Leather Armor",
+      "type": "armor",
+      "system": {
+        "description": "Light protection.",
+        "price": 125,
+        "availability": 80,
+        "defense": 1
+      }
+    },
+    {
+      "name": "Shield",
+      "type": "armor",
+      "system": {
+        "description": "Held in off hand. Can be worn on back.",
+        "price": 100,
+        "availability": 80,
+        "defense": 2
+      }
+    },
+    {
+      "name": "Chain Armor",
+      "type": "armor",
+      "system": {
+        "description": "Very loud and heavy. Disadvantage [-] when sneaking.",
+        "price": 200,
+        "availability": 60,
+        "defense": 3,
+        "stealthPenalty": true,
+        "loud": true
+      }
+    },
+    {
+      "name": "Plate Armor",
+      "type": "armor",
+      "system": {
+        "description": "Loud and very heavy. Disadvantage [-] when sneaking or running.",
+        "price": 500,
+        "availability": 40,
+        "defense": 5,
+        "stealthPenalty": true,
+        "runningPenalty": true,
+        "loud": true
+      }
+    }
+  ]
+}

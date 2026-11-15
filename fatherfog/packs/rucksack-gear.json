@@ -1,0 +1,787 @@
+[
+  {
+    "name": "Cinturó d'eines",
+    "type": "equipment",
+    "img": "icons/equipment/waist/belt-tool-brown.webp",
+    "system": {
+      "description": "Cinturó de cuir dissenyat per portar comodament la majoria d'eines i una bossa de claus.",
+      "price": 75,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Palanca",
+    "type": "weapon",
+    "img": "icons/tools/hand/crowbar-steel.webp",
+    "system": {
+      "description": "Barra metàl·lica amb extrems angulats per fer palanca. Arma de mà (DMG = VOL). Tinkering +5%.",
+      "price": 50,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Tinkering +5%.",
+      "skillBonus": "Tinkering +5%"
+    }
+  },
+  {
+    "name": "Martell",
+    "type": "weapon",
+    "img": "icons/weapons/hammers/hammer-war-rounded.webp",
+    "system": {
+      "description": "Martell d'eines / arma. Smithing +10%. Arma de mà (DMG = VOL).",
+      "price": 100,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Smithing +10%.",
+      "skillBonus": "Smithing +10%"
+    }
+  },
+  {
+    "name": "Escarpa",
+    "type": "equipment",
+    "img": "icons/tools/hand/chisel-steel.webp",
+    "system": {
+      "description": "Eina de mà amb fulla metàl·lica per tallar o donar forma a fusta, pedra o metall.",
+      "price": 30,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 0.5,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Claus",
+    "type": "equipment",
+    "img": "icons/tools/fasteners/nails-steel.webp",
+    "system": {
+      "description": "Claus de ferro petits, no més grans que el dit petit d'un nen.",
+      "price": 2,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 0.1,
+      "equipped": false,
+      "type": "consumable",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Torxa",
+    "type": "equipment",
+    "img": "icons/sundries/lights/torch-brown.webp",
+    "system": {
+      "description": "Il·lumina 9m al voltant del portador. Dura fins a mitja hora abans de destruir-se.",
+      "price": 5,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "light",
+      "special": "Il·lumina 30 peus. Dura ~30 min.",
+      "uses": 1,
+      "maxUses": 1
+    }
+  },
+  {
+    "name": "Ració",
+    "type": "equipment",
+    "img": "icons/consumables/food/soup-broth-bowl-wooden.webp",
+    "system": {
+      "description": "Ració salada de camp, resistent a la putrefacció. Suficient per a una persona durant un dia (no inclou aigua).",
+      "price": 5,
+      "availability": 98,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "consumable",
+      "special": "",
+      "uses": 1,
+      "maxUses": 1
+    }
+  },
+  {
+    "name": "Barca de rem",
+    "type": "equipment",
+    "img": "icons/environment/settlement/boat-rowed.webp",
+    "system": {
+      "description": "Barca de rem petita. Útil per creuar rius o llacs.",
+      "price": 0,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 50,
+      "equipped": false,
+      "type": "general",
+      "special": "Transport. Ocupa molt d'espai.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Martell gran",
+    "type": "weapon",
+    "img": "icons/weapons/hammers/hammer-double-steel.webp",
+    "system": {
+      "description": "Arma pesada a dues mans. DMG = VOL +10.",
+      "price": 150,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 4,
+      "equipped": false,
+      "damageType": "wil+10",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 2,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Pesada. Dany +10 en impactes amb èxit.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Pot de cuques de llum",
+    "type": "equipment",
+    "img": "icons/containers/glass/bottle-round-corked-labeled.webp",
+    "system": {
+      "description": "Pot amb cuques de llum vives. Proporciona 180 cms de visió.",
+      "price": 20,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "light",
+      "special": "180cm de llum.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Destral de mà",
+    "type": "weapon",
+    "img": "icons/weapons/axes/axe-simple-grey.webp",
+    "system": {
+      "description": "Pot tallar fullatge i fins i tot arbres. Arma de mà (DMG = VOL).",
+      "price": 100,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Útil per tallar fusta.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Corda (15m)",
+    "type": "equipment",
+    "img": "icons/sundries/misc/rope-coiled.webp",
+    "system": {
+      "description": "15m de corda d'escalada fiable.",
+      "price": 80,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 5,
+      "equipped": false,
+      "type": "tool",
+      "special": " 15m.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Capseta d'eeca",
+    "type": "equipment",
+    "img": "icons/tools/navigation/map-marked-green.webp",
+    "system": {
+      "description": "Conté estelles de fusta, pedra foguera i acer per encendre focs de manera fiable.",
+      "price": 15,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 0.5,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Ganivet quirúrgic",
+    "type": "weapon",
+    "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+    "system": {
+      "description": "Fulla petita i afilada amb mànec. Surgery +10%. Arma de mà (DMG = VOL −10).",
+      "price": 50,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 0.3,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": -10,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Surgery +10%.",
+      "skillBonus": "Surgery +10%"
+    }
+  },
+  {
+    "name": "Pergamí medicinal",
+    "type": "equipment",
+    "img": "icons/sundries/documents/document-symbol-triangle-brown.webp",
+    "system": {
+      "description": "Pergamí amb notes i receptes medicinals bàsiques.",
+      "price": 45,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 0.2,
+      "equipped": false,
+      "type": "general",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Tinta i ploma",
+    "type": "equipment",
+    "img": "icons/tools/scribal/ink-quill.webp",
+    "system": {
+      "description": "Ampolleta de tinta negra amb suro i una ploma adequada per escriure. Literacy recomanat.",
+      "price": 16,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 0.3,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Kit de cures bàsiques",
+    "type": "equipment",
+    "img": "icons/containers/bags/pouch-leather-pink.webp",
+    "system": {
+      "description": "Paquet de benes, fil i estris. Afegeix Avantatge [+] a Basic Care o permet Basic Care sense l'habilitat. Es consumeix si la curació té èxit.",
+      "price": 70,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "consumable",
+      "special": "Avantatge [+] a Basic Care. Es consumeix amb èxit.",
+      "uses": 1,
+      "maxUses": 1
+    }
+  },
+  {
+    "name": "Pala bona",
+    "type": "equipment",
+    "img": "icons/tools/hand/shovel-spade-steel.webp",
+    "system": {
+      "description": "Pala robusta per excavar i treballs de terra.",
+      "price": 40,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 3,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Tom de coneixement",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-embossed-gold-red.webp",
+    "system": {
+      "description": "Tom amb coneixements escrits. El contingut el determina el jugador (elecció de tema).",
+      "price": 150,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "type": "general",
+      "special": "Contingut a triar pel jugador.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Pot de mostres",
+    "type": "equipment",
+    "img": "icons/containers/glass/vial-corked-labelled.webp",
+    "system": {
+      "description": "Pot de vidre gruixut amb tapa de vidre subjectada amb grapes metàl·liques.",
+      "price": 25,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 0.5,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Lupa",
+    "type": "equipment",
+    "img": "icons/tools/scribal/magnifying-glass.webp",
+    "system": {
+      "description": "Lent convexa per ampliar la imatge d'un objecte o enfocar la llum, si se'n troba.",
+      "price": 75,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 0.3,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Espelma",
+    "type": "equipment",
+    "img": "icons/sundries/lights/candle-lit.webp",
+    "system": {
+      "description": "Il·lumina fins a 15 peus. Dura fins a 32 hores (o 4 vespres).",
+      "price": 80,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 0.2,
+      "equipped": false,
+      "type": "light",
+      "special": "15 peus de llum. Fins a 32 h.",
+      "uses": 1,
+      "maxUses": 1
+    }
+  },
+  {
+    "name": "Fuet",
+    "type": "weapon",
+    "img": "icons/weapons/misc/whip-red-yellow.webp",
+    "system": {
+      "description": "Es pot triar fer dany o embolicar. Inútil quan estàs adjacent. DMG = VOL −10.",
+      "price": 50,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": -10,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Triar dany o embolicar. Inútil adjacent.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Dagues de llançar",
+    "type": "weapon",
+    "img": "icons/weapons/thrown/dagger-thrown.webp",
+    "system": {
+      "description": "Dagues pensades per llançar. Si s'usen en cos a cos es consideren arma improvisada.",
+      "price": 50,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 0.5,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "thrown",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Improvisada si s'usa en melee.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Punys de ferro",
+    "type": "weapon",
+    "img": "icons/weapons/fist/fist-knuckles-brass.webp",
+    "system": {
+      "description": "Només a distància curta (cos a cos). DMG = VOL.",
+      "price": 100,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 0.5,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": true,
+      "grantsDefense": 0,
+      "special": "Només a distància curta.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Kit de serraller",
+    "type": "equipment",
+    "img": "icons/tools/hand/lockpicks-steel.webp",
+    "system": {
+      "description": "Cartera de cuir plena de limes i pardalss de diverses mides. Necessari per a Lockpicking.",
+      "price": 105,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 0.5,
+      "equipped": false,
+      "type": "tool",
+      "special": "Requerit per Lockpicking.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Bufanda facial",
+    "type": "equipment",
+    "img": "icons/equipment/neck/scarf-cloth-red.webp",
+    "system": {
+      "description": "Bufanda o mocador per cobrir-se la cara. Útil per amagar-se o protegir-se del ambient.",
+      "price": 5,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 0.2,
+      "equipped": false,
+      "type": "general",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Bastó",
+    "type": "weapon",
+    "img": "icons/weapons/staves/staff-simple-brown.webp",
+    "system": {
+      "description": "Bastó senzill. +1 Defensa. DMG = VOL.",
+      "price": 10,
+      "availability": 98,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 2,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 1,
+      "special": "+1 Defensa.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Llanterna (oli)",
+    "type": "equipment",
+    "img": "icons/sundries/lights/lantern-iron-yellow.webp",
+    "system": {
+      "description": "Il·lumina 30 peus al voltant del portador. Dura 8 hores abans de necessitar més oli.",
+      "price": 80,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "type": "light",
+      "special": "30 peus. 8 hores per flascó d'oli.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Oli de llanterna",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-bottle-corked-labeled-blue.webp",
+    "system": {
+      "description": "Necessari per alimentar la flama contínua d'una llanterna. 1 pinta (o 1 lb).",
+      "price": 10,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "consumable",
+      "special": "",
+      "uses": 1,
+      "maxUses": 1
+    }
+  },
+  {
+    "name": "Flascó",
+    "type": "equipment",
+    "img": "icons/containers/glass/bottle-round-empty.webp",
+    "system": {
+      "description": "Flascó buit o amb contingut genèric. Útil per a potions, oli o mostres.",
+      "price": 5,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 0.3,
+      "equipped": false,
+      "type": "consumable",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Arc",
+    "type": "weapon",
+    "img": "icons/weapons/bows/shortbow-recurve-brown.webp",
+    "system": {
+      "description": "Arc. DMG = VOL. Amb carcaix el temps de recàrrega es redueix a mig round.",
+      "price": 100,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "ranged",
+      "hands": 2,
+      "reload": 1,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Mig round de recàrrega amb carcaix.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Carcaix",
+    "type": "equipment",
+    "img": "icons/containers/ammunition/arrows-quiver-brown.webp",
+    "system": {
+      "description": "Contenidor per a un accés ràpid a fletxes o forats. Redueix el temps de recàrrega de l'arc a mig round i el de la ballesta a 2 rounds.",
+      "price": 95,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "tool",
+      "special": "Redueix temps de recàrrega d'arc/ballesta.",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Fletxes",
+    "type": "equipment",
+    "img": "icons/weapons/ammunition/arrow-head-white.webp",
+    "system": {
+      "description": "Fletxes per a arc. Cost aproximat 10c per 12.",
+      "price": 10,
+      "availability": 80,
+      "quantity": 12,
+      "weight": 1,
+      "equipped": false,
+      "type": "consumable",
+      "special": "Munició d'arc.",
+      "uses": 12,
+      "maxUses": 12
+    }
+  },
+  {
+    "name": "Armadura de cuir",
+    "type": "armor",
+    "img": "icons/equipment/chest/breastplate-leather-brown.webp",
+    "system": {
+      "description": "Armadura de cuir senzilla. Defensa 1.",
+      "price": 125,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 8,
+      "equipped": false,
+      "defense": 1,
+      "stealthPenalty": false,
+      "runningPenalty": false,
+      "loud": false,
+      "special": ""
+    }
+  },
+  {
+    "name": "Espasa curta",
+    "type": "weapon",
+    "img": "icons/weapons/swords/sword-guard-steel.webp",
+    "system": {
+      "description": "Espasa curta d'una mà. DMG = VOL.",
+      "price": 100,
+      "availability": 80,
+      "quantity": 1,
+      "weight": 2,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Rifle",
+    "type": "weapon",
+    "img": "icons/weapons/guns/gun-rifle-brown.webp",
+    "system": {
+      "description": "Arma de foc. Ignora armadura. DMG = VOL. 4 rounds de recàrrega.",
+      "price": 500,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 5,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "ranged",
+      "hands": 2,
+      "reload": 4,
+      "ignoresArmor": true,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "Ignora armadura. 4 rounds de recàrrega.",
+      "skillBonus": ""
+    }
+  },
+  {
+    "name": "Bossa de munició",
+    "type": "equipment",
+    "img": "icons/containers/bags/pouch-simple-brown.webp",
+    "system": {
+      "description": "Bossa per portar pólvora i projectils de rifle.",
+      "price": 20,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 1,
+      "equipped": false,
+      "type": "tool",
+      "special": "",
+      "uses": 0,
+      "maxUses": 0
+    }
+  },
+  {
+    "name": "Tir de pólvora",
+    "type": "equipment",
+    "img": "icons/commodities/tech/powder-black.webp",
+    "system": {
+      "description": "Càrrega de pólvora + projectil per a rifle. Cost aproximat 10c per unitat.",
+      "price": 10,
+      "availability": 40,
+      "quantity": 1,
+      "weight": 0.2,
+      "equipped": false,
+      "type": "consumable",
+      "special": "Munició de rifle.",
+      "uses": 1,
+      "maxUses": 1
+    }
+  },
+  {
+    "name": "Floret",
+    "type": "weapon",
+    "img": "icons/weapons/swords/sword-rapier.webp",
+    "system": {
+      "description": "Espasa fina d'una mà. DMG = VOL.",
+      "price": 100,
+      "availability": 60,
+      "quantity": 1,
+      "weight": 1.5,
+      "equipped": false,
+      "damageType": "wil",
+      "damageBonus": 0,
+      "weaponType": "melee",
+      "hands": 1,
+      "reload": 0,
+      "ignoresArmor": false,
+      "advantageOnCombat": false,
+      "disadvantageOnCombat": false,
+      "closeQuartersOnly": false,
+      "grantsDefense": 0,
+      "special": "",
+      "skillBonus": ""
+    }
+  }
+]

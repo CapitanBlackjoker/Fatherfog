@@ -1,0 +1,1113 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "Uncomfortable Boot",
+      "ca": "Bota Incòmoda"
+    },
+    "description": {
+      "en": "An old, oversized, and tattered boot that is always uncomfortable to wear. While wearing this ugly boot, it is impossible to lie without tapping the boot to the ground.",
+      "ca": "Una bota vella, massa gran i esparracada que sempre és incòmoda de portar. Mentre portes aquesta bota lletja, és impossible mentir sense colpejar la bota a terra."
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Found Femur",
+      "ca": "Fèmur Trobat"
+    },
+    "description": {
+      "en": "A two-foot-long femur broken in the middle. The two halves always point toward one another as if wanting to fuse back together.",
+      "ca": "Un fèmur de seixanta centímetres trencat pel mig. Les dues meitats sempre apunten l'una cap a l'altra com si volguessin tornar a fusionar-se."
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Two Apples",
+      "ca": "Dues Pomes"
+    },
+    "description": {
+      "en": "Offer someone a bite from either of these two apples. If they agree and pick the wrong apple, they will confess all of their crimes as soon as they take a bite.",
+      "ca": "Ofereix a algú un mos d'una d'aquestes dues pomes. Si accepta i tria la poma equivocada, confessarà tots els seus crims tan aviat com en doni un mos."
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Sleep Brick",
+      "ca": "Maó del Son"
+    },
+    "description": {
+      "en": "A classic red brick that gives the benefit of 4 hours of sleep when struck hard enough by it. Hand Weapon that may be thrown (DMG = WIL).",
+      "ca": "Un maó vermell clàssic que proporciona el benefici de 4 hores de son quan et colpeja amb prou força. Arma de mà que es pot llançar (DMG = WIL)."
+    }
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Truth Pick",
+      "ca": "Palet de la Veritat"
+    },
+    "description": {
+      "en": "This sliver of wood stands upright when near unnatural things or detecting magic.",
+      "ca": "Aquest esquit de fusta es posa dret quan és a prop de coses antinaturals o detecta màgia."
+    }
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Three Mushrooms and the Black Bottle",
+      "ca": "Tres Bolets i l’Ampolla Negra"
+    },
+    "description": {
+      "en": "Eating one of these mushrooms doubles the size of the consumer. Thus, eating all three causes 8 times growth, both height and weight. The Black Bottle has enough sour liquid for three sips, each of which halves the consumer's size.",
+      "ca": "Menjar un d'aquests bolets dobla la mida del consumidor. Així, menjar-ne tots tres provoca un creixement de 8 vegades, tant d'alçada com de pes. L'Ampolla Negra té prou líquid agre per a tres glops, cadascun dels quals redueix a la meitat la mida del consumidor."
+    }
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Bearskin",
+      "ca": "Pell d’Ós"
+    },
+    "description": {
+      "en": "Wearing this bearskin creates the appearance of a living bear. However, once worn, it cannot be removed for 7 years. The wearer may not shave, bathe, nor sleep in a bed for those 7 years. After 7 years, the Devil removes the bearskin and replaces it with beauty and unlimited wealth.",
+      "ca": "Portar aquesta pell d'ós crea l'aparença d'un ós viu. Tanmateix, un cop posada, no es pot treure durant 7 anys. El portador no es pot afaitar, banyar ni dormir en un llit durant aquests 7 anys. Al cap de 7 anys, el Diable li treu la pell d'ós i la substitueix per bellesa i riquesa il·limitada."
+    }
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Loyal Coin",
+      "ca": "Moneda Fidel"
+    },
+    "description": {
+      "en": "A notably polished single Coin that always returns to its owner's purse while sleeping and, when flipped in the air, always lands on the side the owner calls.",
+      "ca": "Una moneda única notablement polida que sempre torna a la bossa del seu propietari mentre dorm i, quan es llança a l'aire, sempre cau pel costat que el propietari anomena."
+    }
+  },
+  {
+    "id": 9,
+    "name": {
+      "en": "Answer Bottle",
+      "ca": "Ampolla de les Respostes"
+    },
+    "description": {
+      "en": "When fully filled with ink and completely emptied onto parchment, the ink depicts an image that best answers a single question. The ink cannot see the future, but only the past and present. This bottle must be empty a full 24 hours before its magic returns.",
+      "ca": "Quan s'omple completament de tinta i s'aboca del tot sobre un pergamí, la tinta representa una imatge que respon millor a una única pregunta. La tinta no pot veure el futur, només el passat i el present. Aquesta ampolla ha d'estar buida durant 24 hores completes abans que la seva màgia torni."
+    }
+  },
+  {
+    "id": 10,
+    "name": {
+      "en": "A Brilliant Pet Fly that is too fat to fly",
+      "ca": "Mosca Grasa i Brillant"
+    },
+    "description": {
+      "en": "This companion always eats and drinks an imperceptible amount of available waste. It cannot speak, but appears to be brilliant, invincible, and immortal.",
+      "ca": "Aquest company sempre menja i beu una quantitat imperceptible de residus disponibles. No pot parlar, però sembla brillant, invencible i immortal."
+    }
+  },
+  {
+    "id": 11,
+    "name": {
+      "en": "Butterfly Bomb",
+      "ca": "Bomba de Papallones"
+    },
+    "description": {
+      "en": "An ornate vase that releases an unbelievable amount of butterflies that flutter away in all directions when smashed. The site of this explosion of butterflies increases the Hope of all onlookers by 1d100. The vase will reappear intact in an unexpected place.",
+      "ca": "Un gerro ornamentat que allibera una quantitat increïble de papallones que s'envolen en totes direccions quan es trenca. El lloc d'aquesta explosió de papallones augmenta l'Esperança de tots els presents en 1d100. El gerro reapareixerà intacte en un lloc inesperat."
+    }
+  },
+  {
+    "id": 12,
+    "name": {
+      "en": "Twelve Magic Beans",
+      "ca": "Dotze Faves Màgiques"
+    },
+    "description": {
+      "en": "When planted in dirt and watered, each bean sprouts an umbrella tree; a 6-foot tree with a perfect canopy under which is a weather-proof warm environment. Combining beans creates a taller sprout, 6 feet for every bean.",
+      "ca": "Quan es planten a la terra i s'hi afegeix aigua, cada fava fa créixer un arbre paraigua; un arbre de 6 peus amb una capçada perfecta sota la qual hi ha un ambient càlid i a prova de la intempèrie. Combinar faves crea un brot més alt, 183 centimetres per cada fava."
+    }
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "Unbreakable Stick",
+      "ca": "Bastó Indestructible"
+    },
+    "description": {
+      "en": "An unbreakable 13-inch stick.",
+      "ca": "Un bastó de 33 centímetres impossible de trencar."
+    }
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "A Really Good Pillow",
+      "ca": "Un Coixí Molt Bo"
+    },
+    "description": {
+      "en": "After sleeping on this pillow for at least 4 hours, all of your rolls are with Advantage [+] until you fail a roll or when the sun reaches high noon (regardless of if you can see it).",
+      "ca": "Després de dormir sobre aquest coixí durant almenys 4 hores, totes les teves tirades tenen Avantatge [+] fins que fallis una tirada o quan el sol arribi al migdia (independentment de si el pots veure)."
+    }
+  },
+  {
+    "id": 15,
+    "name": {
+      "en": "Repair Jelly",
+      "ca": "Gelea Reparadora"
+    },
+    "description": {
+      "en": "A small amount of translucent jelly the size of a loaf of artisan sourdough bread. Whatever is fully submerged in the jelly is slowly repaired.",
+      "ca": "Una petita quantitat de gelea translúcida de la mida d'una barra de pa de massa mare artesanal. Tot el que quedi completament submergit a la gelea es repara lentament."
+    }
+  },
+  {
+    "id": 16,
+    "name": {
+      "en": "Mundane Donkey Fur Coat",
+      "ca": "Abric de Pèl de Ruc"
+    },
+    "description": {
+      "en": "The wearer of this ugly coat appears entirely uninteresting to human viewers. This is not invisibility, but greatly aids in not being noticed and makes the wearer easily forgotten.",
+      "ca": "El portador d'aquest abric lleig sembla completament poc interessant als ulls humans. Això no és invisibilitat, però ajuda molt a no ser notat i fa que el portador s'oblidi fàcilment."
+    }
+  },
+  {
+    "id": 17,
+    "name": {
+      "en": "Ghost Glove",
+      "ca": "Guant Fantasma"
+    },
+    "description": {
+      "en": "This glove can slowly pass through any non-living structure while being worn. While passing through an object, the glove emits a continual loud noise similar to screaming.",
+      "ca": "Aquest guant pot passar lentament a través de qualsevol estructura no viva mentre es porta. Mentre travessa un objecte, el guant emet un soroll fort i continu similar a crits."
+    }
+  },
+  {
+    "id": 18,
+    "name": {
+      "en": "Sage Tick",
+      "ca": "Paparra Sàvia"
+    },
+    "description": {
+      "en": "An immortal and invincible tick that attaches to the back of a neck. While feeding, the tick whispers lessons of value only the host can hear. After every 24 hours of feeding and whispering, the host gains 1 Skill Point and loses 2 Maximum Hope. Removing the tick is a painful experience, causing 2d10 Damage.",
+      "ca": "Una paparra immortal i invencible que s'enganxa a la part del darrere del coll. Mentre s'alimenta, la paparra xiuxiueja lliçons de valor que només l'hoste pot sentir. Després de cada 24 hores d'alimentació i xiuxiueig, l'hoste guanya 1 Punt d'Habilitat i perd 2 d'Esperança Màxima. Treure la paparra és una experiència dolorosa que provoca 2d10 de Dany."
+    }
+  },
+  {
+    "id": 19,
+    "name": {
+      "en": "The Piper's Flute",
+      "ca": "Flauta del Flautista"
+    },
+    "description": {
+      "en": "This instrument requires the Performance Specialty (Flute) Skill to play. The user can gain an Unnatural Ability to play a song that controls a specific creature type. Controlling humans requires them to have a specific 15 year age range and one physical attribute (height, weight, hair color, etc.) in order to work. Commands that are atypical or harmful behaviors provide the target a Mind Save opportunity to resist the command once per day.",
+      "ca": "Aquest instrument requereix l'Habilitat d'Especialitat d'Interpretació (Flauta) per tocar-lo. L'usuari pot obtenir una Habilitat Antinatural per tocar una cançó que controla un tipus específic de criatura. Per controlar humans cal que tinguin un rang d'edat específic de 15 anys i un atribut físic (alçada, pes, color de cabell, etc.) perquè funcioni. Les ordres que són comportaments atípics o nocius donen a l'objectiu una oportunitat de Salvació de Ment per resistir l'ordre una vegada al dia."
+    }
+  },
+  {
+    "id": 20,
+    "name": {
+      "en": "Magic Oil Lamp",
+      "ca": "Làmpada d’Oli Màgica"
+    },
+    "description": {
+      "en": "Rubbing this lamp summons a genie. The genie can be summoned up to 3 times. With each summon, the genie can do one of the following: 1) Open an inorganic object that is closed (door, lock, etc.). 2) Answer any one question truthfully. 3) Transport the owner and anything their flesh is touching to any place they've been.",
+      "ca": "Fregar aquesta làmpada invoca un geni. El geni es pot invocar fins a 3 vegades. Amb cada invocació, el geni pot fer una de les coses següents: 1) Obrir un objecte inorgànic que estigui tancat (porta, pany, etc.). 2) Respondre qualsevol pregunta amb veritat. 3) Transportar el propietari i tot el que toqui la seva carn a qualsevol lloc on hagi estat."
+    }
+  },
+  {
+    "id": 21,
+    "name": {
+      "en": "Glass Slipper",
+      "ca": "Sabata de Vidre"
+    },
+    "description": {
+      "en": "This slipper allows the wearer to summon any single outfit once a night. This can only be done between sundown and midnight. It can only summon clothing. Removing any piece of clothing, or when midnight arrives, the summoned clothing is instantly dispelled.",
+      "ca": "Aquesta sabata permet al portador invocar qualsevol vestimenta única una vegada per nit. Només es pot fer entre la posta de sol i la mitjanit. Només pot invocar roba. En treure qualsevol peça de roba, o quan arriba la mitjanit, la roba invocada es dissipa a l'instant."
+    }
+  },
+  {
+    "id": 22,
+    "name": {
+      "en": "Golden Ball",
+      "ca": "Bola Daurada"
+    },
+    "description": {
+      "en": "Anyone holding this ball in their mouth is transformed into a typical frog. The transformation ends and the ball is returned only when someone kisses the frog. In frog form, all intelligence remains, as does the ability to speak. Forcing the ball into someone's mouth is often difficult.",
+      "ca": "Qualsevol que tingui aquesta bola a la boca es transforma en una granota normal. La transformació acaba i la bola torna només quan algú besa la granota. En forma de granota, tota la intel·ligència es manté, així com la capacitat de parlar. Forçar la bola a la boca d'algú sovint és difícil."
+    }
+  },
+  {
+    "id": 23,
+    "name": {
+      "en": "Helmet of Terror",
+      "ca": "Casc del Terror"
+    },
+    "description": {
+      "en": "A helmet that, when worn, renders the wearer blind, deaf, and completely invisible. The sensory deprivation causes the loss of a 1d10 Maximum Hope every time it is worn.",
+      "ca": "Un casc que, quan es porta, deixa el portador cec, sord i completament invisible. La privació sensorial provoca la pèrdua d'1d10 d'Esperança Màxima cada vegada que es porta."
+    }
+  },
+  {
+    "id": 24,
+    "name": {
+      "en": "Incalimir",
+      "ca": "Incalimir"
+    },
+    "description": {
+      "en": "A perfect longsword that can only be wielded by the one person the sword chooses. If anyone else attempts to wield the blade, its tip becomes impossibly heavy and buries itself into whatever it falls into. Only the chosen one can remove it from the object in which it is buried. Hand Weapon with Advantage [+] on rolls to attack (DMG = WIL).",
+      "ca": "Una espasa llarga perfecta que només pot ser brandada per la persona que l'espasa tria. Si qualsevol altre intenta brandar-la, la punta es torna impossible de pesant i s'enfonsa en el que caigui. Només l'elegit la pot treure de l'objecte on està enterrada. Arma de mà amb Avantatge [+] a les tirades d'atac (DMG = WIL)."
+    }
+  },
+  {
+    "id": 25,
+    "name": {
+      "en": "Magic Carpet",
+      "ca": "Catifa Màgica"
+    },
+    "description": {
+      "en": "This 4' x 6' rug floats wherever it is unrolled. It can't be moved until it is rolled back up. It supports an unlimited amount of weight. It is also made of a material that allows it to gently catch anything or anyone that falls onto it when floating.",
+      "ca": "Aquesta catifa de 122cm x 183cm flota allà on s'estén. No es pot moure fins que no es torni a enrotllar. Suporta una quantitat il·limitada de pes. També està feta d'un material que li permet agafar suaument qualsevol cosa o persona que hi caigui quan flota."
+    }
+  },
+  {
+    "id": 26,
+    "name": {
+      "en": "Big Bad Basket",
+      "ca": "Cistella Gran i Dolenta"
+    },
+    "description": {
+      "en": "Opening this basket releases a gale force wind, providing a loud howling sound. The more the basket opens, the stronger and louder the wind. When fully opened, the basket needs a full day's rest to catch its breath.",
+      "ca": "Obrir aquesta cistella allibera un vent de força de tempesta, amb un so fort d'udol. Com més s'obre la cistella, més fort i més alt és el vent. Quan està completament oberta, la cistella necessita un dia sencer de descans per recuperar l'alè."
+    }
+  },
+  {
+    "id": 27,
+    "name": {
+      "en": "Stasis Needle",
+      "ca": "Agulla d’Estasi"
+    },
+    "description": {
+      "en": "When this 2 inch needle is swallowed, the consumer instantly falls into an unnatural sleep. The sleeper requires no food or drink, nor do they age. The sleeper only wakes and spits out the needle when at least one of their lips bleeds.",
+      "ca": "Quan s'empassa aquesta agulla de 5 centímetres, el consumidor cau a l'instant en un son antinatural. No necessita menjar ni beure, ni envelleix. I només es pot despertar, si escup l'agulla quan un dels seus llavis sagna."
+    }
+  },
+  {
+    "id": 28,
+    "name": {
+      "en": "Tainted Tarot Deck",
+      "ca": "Baralla de Tarot Corrompuda"
+    },
+    "description": {
+      "en": "This deck of tarot cards, no matter how many times shuffled, always reveals the same first 3 cards. In order, those three cards are Death, The Tower, and The Devil.",
+      "ca": "Aquesta baralla de tarot, per molt que es barregi, sempre revela les mateixes 3 primeres cartes. En ordre, aquestes tres cartes són la Mort, la Torre i el Diable."
+    }
+  },
+  {
+    "id": 29,
+    "name": {
+      "en": "Medusa's Skull",
+      "ca": "Cranis de Medusa"
+    },
+    "description": {
+      "en": "When someone looks into the eye sockets of this skull, they can't blink nor look away until the line of sight is broken. Their movement slows as if they are gradually turning to stone. This skull is so unnerving that all who are in its presence when it is uncovered lose a 1d10 Maximum Hope.",
+      "ca": "Quan algú mira les òrbites oculars d'aquest crani, no pot parpellejar ni apartar la mirada fins que es trenqui la línia de visió. El seu moviment s'alenteix com si s'estigués convertint gradualment en pedra. Aquest crani és tan inquietant que tots els que estan a la seva presència quan es descobreix perden 1d10 d'Esperança Màxima."
+    }
+  },
+  {
+    "id": 30,
+    "name": {
+      "en": "Midas Finger",
+      "ca": "Dit de Mides"
+    },
+    "description": {
+      "en": "Any non-fauna object touched by this severed golden finger transforms into gold. The spread of gold is at a snail's pace. The finger comes wrapped in leather to prevent the unintentional spreading of gold. Unnaturally, any gold made with the finger holds no monetary value.",
+      "ca": "Qualsevol objecte no faunístic tocat per aquest dit daurat tallat es transforma en or. L'extensió de l'or és a pas de caragol. El dit ve embolicat en cuir per evitar l'extensió involuntària de l'or. De manera antinatural, qualsevol or fet amb el dit no té valor monetari."
+    }
+  },
+  {
+    "id": 31,
+    "name": {
+      "en": "Gran Gran's Grimoire",
+      "ca": "Grimori de l’Àvia"
+    },
+    "description": {
+      "en": "This book details all Artifacts mentioned here, including itself. It also contains recipes and cooking lessons, instantly providing the Cooking Skill to its true owner.",
+      "ca": "Aquest llibre detalla tots els Artefactes esmentats aquí, inclòs ell mateix. També conté receptes i lliçons de cuina, proporcionant a l'instant l'Habilitat de Cuinar al seu verdader propietari."
+    }
+  },
+  {
+    "id": 32,
+    "name": {
+      "en": "Bronze Ball of Yarn",
+      "ca": "Bola de Fil de Bronze"
+    },
+    "description": {
+      "en": "This shiny ball of yarn never seems to run out. Its thread shimmers even in complete darkness. The thread is easily broken and detached segments quickly dissolve into nothing.",
+      "ca": "Aquesta bola de fil brillant sembla que no s'acaba mai. El seu fil brilla fins i tot en completa foscor. El fil es trenca fàcilment i els segments separats es dissolen ràpidament en no-res."
+    }
+  },
+  {
+    "id": 33,
+    "name": {
+      "en": "Fruit of Agony",
+      "ca": "Fruit de l’Agonia"
+    },
+    "description": {
+      "en": "A single bite of this fruit is enough sustenance for an entire day's food, drink, and sleep. The fruit regenerates from its pit, and is therefore never ending. When eaten, the consumer must succeed a Body Save or lose a bit of Health and writhe in agony for 1d10 minutes.",
+      "ca": "Un sol mos d'aquest fruit és prou aliment per a tot un dia de menjar, beure i dormir. El fruit es regenera del seu pinyol i, per tant, no s'acaba mai. Quan es menja, el consumidor ha de superar una Salvació de Cos o perdre una mica de Salut i retorçar-se d'agonia durant 1d10 minuts."
+    }
+  },
+  {
+    "id": 34,
+    "name": {
+      "en": "Gluttonous Grimoire",
+      "ca": "Grimori Golafre"
+    },
+    "description": {
+      "en": "This fat book eats other books. The pages it eats, it absorbs, expanding its own contents to include the knowledge consumed. It refuses to open 24 hours after eating.",
+      "ca": "Aquest llibre gros es menja altres llibres. Les pàgines que menja, les absorbeix, expandint el seu propi contingut per incloure el coneixement consumit. Es nega a obrir-se durant 24 hores després de menjar."
+    }
+  },
+  {
+    "id": 35,
+    "name": {
+      "en": "Sleepless Pea",
+      "ca": "Pèsol Sense Son"
+    },
+    "description": {
+      "en": "While touching this stone-like pea it is impossible to fall asleep by any means.",
+      "ca": "Mentre es toca aquest pèsol com una pedra és impossible adormir-se de cap manera."
+    }
+  },
+  {
+    "id": 36,
+    "name": {
+      "en": "Magic Hand Mirror",
+      "ca": "Mirall de Mà Màgic"
+    },
+    "description": {
+      "en": "This decorative hand mirror will answer one “who” question every 24 hours. The question must be asked in one sentence with two halves that rhyme. The mirror answers the question by showing an image instead of a reflection.",
+      "ca": "Aquest mirall de mà decoratiu respondrà una pregunta de “qui” cada 24 hores. La pregunta s'ha de fer en una sola frase amb dues meitats que rimin. El mirall respon a la pregunta mostrant una imatge en lloc d'un reflex."
+    }
+  },
+  {
+    "id": 37,
+    "name": {
+      "en": "Shimmering Boots",
+      "ca": "Botes Centellejants"
+    },
+    "description": {
+      "en": "If the heels are clicked together 3 times, the wearer is transported to another realm. After 1d10 minutes they blink back to where they were when the heels were clicked. No matter the time that passes, the wearer spent a full week of adventure in another world. The wearer gains a Skill Point from their adventure but loses 1d10 Health and Maximum Hope.",
+      "ca": "Si es claquegen els talons 3 vegades, el portador és transportat a un altre regne. Després d'1d10 minuts parpelleja de tornada al lloc on era quan va claquejar els talons. Independentment del temps que passi, pel portador ha passat una setmana completa d'aventura en un altre món. El portador guanya un Punt d'Habilitat de la seva aventura però perd 1d10 de Salut i d'Esperança Màxima."
+    }
+  },
+  {
+    "id": 38,
+    "name": {
+      "en": "The Devil's Pitchfork",
+      "ca": "Forca del Diable"
+    },
+    "description": {
+      "en": "Once this three-pronged 6' pitchfork is held, it can never be let go of unless another willingly takes it. While held, the prongs are aflame. This flame emits no heat nor can it spread. It provides 30 feet of illumination and is a two-handed Great Weapon (DMG = WIL +10). Additionally, the wielder can dance better than the best.",
+      "ca": "Un cop es subjecta aquesta forca de tres puntes de 183 cm, no es pot deixar anar a menys que un altre la prengui de bona gana. Mentre es subjecta, les puntes estan en flames. Aquesta flama no emet calor ni es pot propagar. Proporciona 9 metres d'il·luminació i és una Gran Arma a dues mans (DMG = WIL +10). A més, el portador pot ballar millor que mimgú."
+    }
+  },
+  {
+    "id": 39,
+    "name": {
+      "en": "The Blue Key",
+      "ca": "La Clau Blava"
+    },
+    "description": {
+      "en": "A blue key made from a human finger bone. The bow of the key is a fossilized egg. This key magically fits into any keyhole. Whatever it opens leads to the Blue Room, a 10' x 100' x 10' pitch black room filled with blood and the corpses of dead women.",
+      "ca": "Una clau blava feta d'un os de dit humà. L'arc de la clau és un ou fossilitzat. Aquesta clau encaixa màgicament a qualsevol forat de pany. El que obre porta a l'Habitació Blava, una habitació de 3m x 30m x 3m  completament negra plena de sang i dels cadàvers de dones mortes."
+    }
+  },
+  {
+    "id": 40,
+    "name": {
+      "en": "Lion Cape",
+      "ca": "Capa de Lleó"
+    },
+    "description": {
+      "en": "This cape, made from a giant lion pelt, provides 5 Defense. However, the longer the cape is worn, the more confident the wearer becomes, refusing to turn away from danger.",
+      "ca": "Aquesta capa, feta d'una pell de lleó gegant, proporciona 5 de Defensa. Tanmateix, com més temps es porta la capa, més confiat es torna el portador, negant-se a apartar-se del perill."
+    }
+  },
+  {
+    "id": 41,
+    "name": {
+      "en": "Tuneless Triangle",
+      "ca": "Triangle Sense Melodia"
+    },
+    "description": {
+      "en": "When struck, a deafening silence is heard by all within earshot. Nobody can hear anything while it is being rung.",
+      "ca": "Quan es colpeja, un silenci ensordidor és sentit per tots els que estan a l'abast de l'oïda. Ningú no pot sentir res mentre es fa sonar."
+    }
+  },
+  {
+    "id": 42,
+    "name": {
+      "en": "Wicked Tooth",
+      "ca": "Dent Malvada"
+    },
+    "description": {
+      "en": "A jagged human canine tethered to a string necklace. This tooth seems indestructible and can slowly saw through anything.",
+      "ca": "Un ullal humà lligat a un collaret de cordill. Aquesta dent sembla indestructible i pot serrar lentament qualsevol cosa."
+    }
+  },
+  {
+    "id": 43,
+    "name": {
+      "en": "The Third Eye",
+      "ca": "El Tercer Ull"
+    },
+    "description": {
+      "en": "An eye that seems to be indestructible. It can replace a missing eye. The iris changes color depending on who holds it. The holder can see through the eye while it is held.",
+      "ca": "Un ull que sembla indestructible. Pot substituir un ull que falta. L'iris canvia de color segons qui el subjecta. El portador pot veure a través de l'ull mentre el subjecta."
+    }
+  },
+  {
+    "id": 44,
+    "name": {
+      "en": "Green Ribbon",
+      "ca": "Cinta Verda"
+    },
+    "description": {
+      "en": "A 2-foot long emerald green ribbon that can reattach any severed body part to full function as long as this ribbon remains tightly tied.",
+      "ca": "Una cinta de color verd maragda de 60cm de llarg que pot tornar a unir qualsevol part del cos tallada amb plena funcionalitat mentre aquesta cinta romangui ben lligada."
+    }
+  },
+  {
+    "id": 45,
+    "name": {
+      "en": "Gourd Flask",
+      "ca": "Carbassa-Flascó"
+    },
+    "description": {
+      "en": "A gourd-shaped bottle. Any liquid poured into the bottle becomes sake.",
+      "ca": "Una ampolla amb forma de carbassa. Qualsevol líquid abocat a l'ampolla es converteix en sake."
+    }
+  },
+  {
+    "id": 46,
+    "name": {
+      "en": "Shadow Shears",
+      "ca": "Tisores d’Ombra"
+    },
+    "description": {
+      "en": "These single-hand shears appear to be made of shadow. They can only cut or damage shadows. Shadows cut from their caster will flee to live their own life, leaving the caster in a perpetually worse state until reunited.",
+      "ca": "Aquestes tisores d'una sola mà semblen fetes d'ombra. Només poden tallar o danyar ombres. Les ombres tallades del seu propietari fugiran per viure la seva pròpia vida, deixant la víctima en un estat perpetuament pitjor fins que es tornin a unir."
+    }
+  },
+  {
+    "id": 47,
+    "name": {
+      "en": "Swanfeather Mantle",
+      "ca": "Mantell de Plomes de Cigne"
+    },
+    "description": {
+      "en": "This mantle is made of 100 beautiful swan feathers. It allows the wearer to descend any height without harm. Every fall causes it to lose 1d100 feathers. If it runs out of feathers, the wearer transforms into a featherless duckling. Speech and intelligence remain.",
+      "ca": "Aquest mantell està fet de 100 belles plomes de cigne. Permet al portador baixar qualsevol alçada sense dany. Cada caiguda fa que perdi 1d100 plomes. Si es queda sense plomes, el portador es transforma en un aneguet sense plomes. La parla i la intel·ligència es mantenen."
+    }
+  },
+  {
+    "id": 48,
+    "name": {
+      "en": "Golden Ring",
+      "ca": "Anell Daurat"
+    },
+    "description": {
+      "en": "Made from 3 of the Devil's golden hairs. The wearer must always do their best to fulfill their promises or else they will endure eternal & painful consequences.",
+      "ca": "Fet amb 3 dels cabells daurats del Diable. El portador sempre ha de fer el possible per complir les seves promeses o, si no, patirà conseqüències eternes i doloroses."
+    }
+  },
+  {
+    "id": 49,
+    "name": {
+      "en": "Metal Mouse",
+      "ca": "Ratolí de Metall"
+    },
+    "description": {
+      "en": "This strange mechanical mouse will perpetually chew on almost anything until it is removed. If what it chews on is magical, then all magical potency is nullified while being chewed.",
+      "ca": "Aquest estrany ratolí mecànic mastegarà perpetuament gairebé qualsevol cosa fins que se'l tregui. Si el que mastega és màgic, aleshores tota la potència màgica queda anul·lada mentre es mastega."
+    }
+  },
+  {
+    "id": 50,
+    "name": {
+      "en": "Juniper Necklace",
+      "ca": "Collaret de Ginebre"
+    },
+    "description": {
+      "en": "This necklace is made from the wood of a juniper tree and is decorated with a miniature mill stone charm. An avian spirit can be summoned for the price of a pair of shoes. This bird's song captivates all who hear it except the wearer of this necklace.",
+      "ca": "Aquest collaret està fet de fusta de ginebre i està decorat amb un amulet en miniatura de mola. Es pot invocar un esperit aviari pel preu d'un parell de sabates. El cant d'aquest ocell captiva a tots els qui el senten tret del portador d'aquest collaret."
+    }
+  },
+  {
+    "id": 51,
+    "name": {
+      "en": "Bell Bracelet",
+      "ca": "Braçalet de Campana"
+    },
+    "description": {
+      "en": "This beaded bracelet sports a single jingle bell. The owner of this bracelet is always in the company of a mischievous ghost. This spirit cannot speak and can only be seen by the owner.",
+      "ca": "Aquest braçalet de comptes porta una sola campaneta. El propietari d'aquest braçalet sempre està en companyia d'un fantasma entremaliat. Aquest esperit no pot parlar i només el pot veure el propietari."
+    }
+  },
+  {
+    "id": 52,
+    "name": {
+      "en": "Brother Bailey's Bag",
+      "ca": "Bossa del Germà Bailey"
+    },
+    "description": {
+      "en": "Whenever the owner wishes, they can transport themselves into this bag. The bag is big enough to hold a full grown adult.",
+      "ca": "Sempre que el propietari ho desitgi, es pot transportar dins d'aquesta bossa. La bossa és prou gran per contenir un adult de mida normal."
+    }
+  },
+  {
+    "id": 53,
+    "name": {
+      "en": "Sea Hag Seashell",
+      "ca": "Petxina de la Bruixa Marina"
+    },
+    "description": {
+      "en": "The wearer of this necklace's voice changes to a beautiful feminine voice capable of unmatched mezzo soprano singing, better than if they had the Performer Specialty (Singing) Skill.",
+      "ca": "La veu del portador d'aquest collaret canvia a una bella veu femenina capaç de cantar mezzo soprano sense igual, millor que si tingués l'Habilitat d'Especialitat d'Intèrpret (Cant)."
+    }
+  },
+  {
+    "id": 54,
+    "name": {
+      "en": "Green Knight's Axe",
+      "ca": "Destral del Cavaller Verd"
+    },
+    "description": {
+      "en": "This sharp great axe is not made of metal, but of magically entwined flora. It can never be used on vegetation. While being held, any Damage done or received is equally shared with the wielder or the opponent. Great Weapon (DMG = WIL +10).",
+      "ca": "Aquesta destral gran i afilada no està feta de metall, sinó de flora entrellaçada màgicament. Mai es pot usar sobre vegetació. Mentre es subjecta, qualsevol Dany fet o rebut es comparteix a parts iguals amb el portador o l'oponent. Gran Arma (DMG = WIL +10)."
+    }
+  },
+  {
+    "id": 55,
+    "name": {
+      "en": "The Dangling Shortsword of Damocles",
+      "ca": "L’Espasa Curta Penjant de Dàmocles"
+    },
+    "description": {
+      "en": "This invisible sword precariously dangles over the owner's head. Only they can see it. To grab it with their bare hand means injury (lose a Bit of Health). Will it someday fall? Perhaps. −10 Maximum Hope. Hand Weapon with Advantage [+] on rolls to attack (DMG = WIL).",
+      "ca": "Aquesta espasa invisible penja precàriament sobre el cap del propietari. Només ell la pot veure. Agafar-la amb la mà nua implica una ferida (perdre una mica de Salut). Caurà algun dia? Potser. −10 d'Esperança Màxima. Arma de mà amb Avantatge [+] a les tirades d'atac (DMG = WIL)."
+    }
+  },
+  {
+    "id": 56,
+    "name": {
+      "en": "Lilith's Snake",
+      "ca": "Serp de Lilith"
+    },
+    "description": {
+      "en": "This sentient serpent speaks and will always free any woman in physical bondage. No shackle, knot, cuff, or even locked door can restrict a woman while in the presence of this companion.",
+      "ca": "Aquesta serp conscient parla i sempre alliberarà qualsevol dona en captiveri físic. Cap griló, nus, manilla o fins i tot porta tancada pot restringir una dona mentre estigui en presència d'aquest company."
+    }
+  },
+  {
+    "id": 57,
+    "name": {
+      "en": "Zephyr Blade",
+      "ca": "Fulla Zephyr"
+    },
+    "description": {
+      "en": "This sword looks like a useless stick. Hand Weapon (DMG = WIL).",
+      "ca": "Aquesta espasa sembla un bastó inútil. Arma de mà (DMG = WIL)."
+    }
+  },
+  {
+    "id": 58,
+    "name": {
+      "en": "Winged Sausage Mouse",
+      "ca": "Ratolí Salsitxa Alat"
+    },
+    "description": {
+      "en": "This winged mouse smells of sausage. Once every night it can bring the owner dry kindling to start a fire.",
+      "ca": "Aquest ratolí alat fa olor de salsitxa. Una vegada cada nit pot portar al propietari llenya seca per encendre un foc."
+    }
+  },
+  {
+    "id": 59,
+    "name": {
+      "en": "Face Frog",
+      "ca": "Granota de Cara"
+    },
+    "description": {
+      "en": "This supernatural, yet unassuming, frog requires at least three meals a day or 1d10 of its owner's Health. When placed on a face, it will tightly hug it, allowing the frog wearer to breathe underwater.",
+      "ca": "Aquesta granota sobrenatural, però discreta, requereix almenys tres àpats al dia o 1d10 de la Salut del seu propietari. Quan es posa a la cara, l'abraça fortament, permetent al portador de la granota respirar sota l'aigua."
+    }
+  },
+  {
+    "id": 60,
+    "name": {
+      "en": "The Hand of a Miller's Daughter",
+      "ca": "La Mà de la Filla del Moliner"
+    },
+    "description": {
+      "en": "This severed hand can be traded for any one specific physical object. The hand is seen by others as though it is a gem worth a fortune that nobody actually wants, but will always accept as payment.",
+      "ca": "Aquesta mà tallada es pot intercanviar per qualsevol objecte físic específic. La mà és vista pels altres com si fos una gemma que val una fortuna que en realitat ningú no vol, però que sempre acceptaran com a pagament."
+    }
+  },
+  {
+    "id": 61,
+    "name": {
+      "en": "Bagpipe-Playing Rooster",
+      "ca": "Gall amb CorNamura"
+    },
+    "description": {
+      "en": "Seems like a regular rooster until someone gives him a set of bagpipes. The rooster always follows its owner and is very good at surviving.",
+      "ca": "Sembla un gall normal fins que algú li dóna un joc de gaites. El gall sempre segueix el seu propietari i és molt bo en sobreviure."
+    }
+  },
+  {
+    "id": 62,
+    "name": {
+      "en": "Goose Nail",
+      "ca": "Clau d’Oca"
+    },
+    "description": {
+      "en": "Use this simple nail to secure a severed head to a wall and make it speak as long as the tongue is intact. The head does not have to be human to speak.",
+      "ca": "Utilitza aquest clau simple per fixar un cap tallat a una paret i fer-lo parlar sempre que la llengua estigui intacta. El cap no ha de ser humà per parlar."
+    }
+  },
+  {
+    "id": 63,
+    "name": {
+      "en": "Mirror Shard Spectacles",
+      "ca": "Ulleres de Tros de Mirall"
+    },
+    "description": {
+      "en": "Donning these spectacles causes the wearer to only see the mistakes and weaknesses in everything. Lose 5 Maximum Hope the moment they are put on and every minute after that.",
+      "ca": "Posar-se aquestes ulleres fa que el portador només vegi els errors i les debilitats de tot. Es perden 5 d'Esperança Màxima en el moment de posar-se-les i cada minut després."
+    }
+  },
+  {
+    "id": 64,
+    "name": {
+      "en": "The Cannibal's Ashes",
+      "ca": "Les Cendres del Caníbal"
+    },
+    "description": {
+      "en": "Placing a severed finger in this bag of ashes causes the owner of the bag to either find their way if lost or successfully hide until they are safe.",
+      "ca": "Posar un dit tallat en aquesta bossa de cendres fa que el propietari de la bossa o bé trobi el camí si està perdut o s'amagui amb èxit fins que estigui segur."
+    }
+  },
+  {
+    "id": 65,
+    "name": {
+      "en": "The Monkey's Thumb",
+      "ca": "El Polze del Mico"
+    },
+    "description": {
+      "en": "This straight severed monkey's thumb will bend after it is asked for a wish. The wish will be granted in the most calamitous way possible. The thumb cannot straighten once bent.",
+      "ca": "Aquest polze de mico tallat i recte es doblegarà després que se li demani un desig. El desig serà concedit de la manera més calamitosa possible. El polze no es pot redreçar un cop doblegat."
+    }
+  },
+  {
+    "id": 66,
+    "name": {
+      "en": "The Singing Bone",
+      "ca": "L’Os Cantaire"
+    },
+    "description": {
+      "en": "This flute made of bone leads the player to the nearest dead body when played.",
+      "ca": "Aquesta flauta feta d'os porta el jugador al cos mort més proper quan es toca."
+    }
+  },
+  {
+    "id": 67,
+    "name": {
+      "en": "Forever Candle",
+      "ca": "Espelma Eterna"
+    },
+    "description": {
+      "en": "A candle that, when burning, grows instead of melts. Breaking the candle causes the broken segment to quickly crumble into a dust cloud, which smells worse than a rotting carcass.",
+      "ca": "Una espelma que, quan crema, creix en lloc de fondre's. Trencar l'espelma fa que el segment trencat es desfacil ràpidament en un núvol de pols, que fa una olor pitjor que un cadàver en descomposició."
+    }
+  },
+  {
+    "id": 68,
+    "name": {
+      "en": "The Pit of a Date",
+      "ca": "El pinyol d’una Dàtil"
+    },
+    "description": {
+      "en": "When attacking with a sling and using this pit as a projectile, any Will Check less than 15 instantly kills the creature if it weighs more than 300lbs. A critical failure loses the pit forever.",
+      "ca": "Quan s'ataca amb una fona i s'utilitza aquest pinyol com a projectil, qualsevol Prova de Voluntat inferior a 15 mata a l'instant la criatura si pesa més de 136 Kg. Un fallada crítica fa perdre el pinyol per sempre."
+    }
+  },
+  {
+    "id": 69,
+    "name": {
+      "en": "Polished Egg",
+      "ca": "Ou Polit"
+    },
+    "description": {
+      "en": "Tossing this shiny black egg against a wall causes all but the thrower to look at it while it falls.",
+      "ca": "Llançar aquest ou negre brillant contra una paret fa que tots tret del llançador el mirin mentre cau."
+    }
+  },
+  {
+    "id": 70,
+    "name": {
+      "en": "Map Crow",
+      "ca": "Corb Cartògraf"
+    },
+    "description": {
+      "en": "An amenable crow companion with cartography skills and knowledge.",
+      "ca": "Un company corb amable amb habilitats i coneixements de cartografia."
+    }
+  },
+  {
+    "id": 71,
+    "name": {
+      "en": "Godfather Death's Herb",
+      "ca": "Herba del Padrí Mort"
+    },
+    "description": {
+      "en": "This dried leaf can be given to Death instead of providing him with what he demands, once.",
+      "ca": "Aquesta fulla seca es pot donar a la Mort en lloc de proporcionar-li el que demana, una sola vegada."
+    }
+  },
+  {
+    "id": 72,
+    "name": {
+      "en": "Walnut Storage",
+      "ca": "Emmagatzematge de Nou"
+    },
+    "description": {
+      "en": "This walnut can store the equivalent of 3 dresses within about ½ cubic foot. Contents must have the ability to be compressed (like clothing).",
+      "ca": "Aquesta nou pot emmagatzemar l'equivalent a 3 vestits dins d'aproximadament 2cm3. El contingut ha de tenir la capacitat de ser comprimit (com la roba)."
+    }
+  },
+  {
+    "id": 73,
+    "name": {
+      "en": "The Spreading Scalp",
+      "ca": "El Cuir Cabellut que s’Estén"
+    },
+    "description": {
+      "en": "When the wearer of this wig sings well, the hair rapidly grows in length.",
+      "ca": "Quan el portador d'aquesta perruca canta bé, el cabell creix ràpidament en longitud."
+    }
+  },
+  {
+    "id": 74,
+    "name": {
+      "en": "Poison Comb",
+      "ca": "Pinta Verinosa"
+    },
+    "description": {
+      "en": "While this comb rests within one's hair, they become violently ill, expelling all inner digestive contents.",
+      "ca": "Mentre aquesta pinta roman al cabell d'algú, es posa violentament malalt, expulsant tot el contingut digestiu interior."
+    }
+  },
+  {
+    "id": 75,
+    "name": {
+      "en": "The Muddy Quill",
+      "ca": "La Ploma Fangosa"
+    },
+    "description": {
+      "en": "Possessing this quill provides the ability to converse with animals when no one else is around.",
+      "ca": "Possessar aquesta ploma proporciona la capacitat de conversar amb animals quan no hi ha ningú més a prop."
+    }
+  },
+  {
+    "id": 76,
+    "name": {
+      "en": "Gertrude's Log",
+      "ca": "Tronc de Gertrude"
+    },
+    "description": {
+      "en": "This log burns hot and bright. It never disintegrates, allowing it to burn forever. However, while burning, it screams like a young woman in agony.",
+      "ca": "Aquest tronc crema calent i brillant. Mai es desintegra, permetent-li cremar per sempre. Tanmateix, mentre crema, crida com una jove en agonia."
+    }
+  },
+  {
+    "id": 77,
+    "name": {
+      "en": "Golden Harp",
+      "ca": "Arpa Daurada"
+    },
+    "description": {
+      "en": "This beautiful harp plays breathtaking music on its own. The music is so good, it tends to attract spirits.",
+      "ca": "Aquesta bella arpa toca música impressionant per si sola. La música és tan bona que tendeix a atraure esperits."
+    }
+  },
+  {
+    "id": 78,
+    "name": {
+      "en": "Black Rose of the Beast",
+      "ca": "Rosa Negra de la Bèstia"
+    },
+    "description": {
+      "en": "This black rose contains 20 petals. When someone plucks a petal it allows them to speak to a single inanimate object for 1 minute. Every petal lost has a 5% chance of the Beast finding the plucker.",
+      "ca": "Aquesta rosa negra conté 20 pètals. Quan algú arrenca un pètal, li permet parlar amb un sol objecte inanimat durant 1 minut. Cada pètal perdut té un 5% de possibilitats que la Bèstia trobi qui l'ha arrencat."
+    }
+  },
+  {
+    "id": 79,
+    "name": {
+      "en": "Tooth Pillow",
+      "ca": "Coixí de Dents"
+    },
+    "description": {
+      "en": "Place teeth under this tiny unassuming pillow at night. As long as nobody is watching, the teeth are replaced with Coin by morning. Coin amount varies by tooth quality, but 2d10 Coin per tooth is typical.",
+      "ca": "Posa dents sota aquest petit coixí discret a la nit. Mentre ningú no estigui mirant, les dents es substitueixen per Monedes al matí. La quantitat de Monedes varia segons la qualitat de la dent, però 2d10 Monedes per dent és típic."
+    }
+  },
+  {
+    "id": 80,
+    "name": {
+      "en": "Cupid's Arrow",
+      "ca": "Fletxa de Cupido"
+    },
+    "description": {
+      "en": "Any creature struck by this arrow obsessively falls in love with the first creature they see after being pierced. The effect lasts 24 hours or until they are harmed. This arrow has a 33% chance of disintegrating into a pink puff after it pierces anything.",
+      "ca": "Qualsevol criatura colpejada per aquesta fletxa s'enamora obsessivament de la primera criatura que veu després de ser perforada. L'efecte dura 24 hores o fins que es faci mal. Aquesta fletxa té un 33% de possibilitats de desintegrar-se en un núvol rosa després de perforar qualsevol cosa."
+    }
+  },
+  {
+    "id": 81,
+    "name": {
+      "en": "The Calaria",
+      "ca": "Les Calaria"
+    },
+    "description": {
+      "en": "These winged sandals never leave footprints nor make a sound, no matter how heavy or hard the stomp.",
+      "ca": "Aquestes sandàlies alades mai deixen petjades ni fan soroll, per molt pesat o fort que sigui el pas."
+    }
+  },
+  {
+    "id": 82,
+    "name": {
+      "en": "The Goddess Girdle",
+      "ca": "El Cinyell de la Deessa"
+    },
+    "description": {
+      "en": "The wearer of this decorative bronze girdle instantly appears as their most attractive self. The change is not in their appearance but how they are perceived by others, for better or worse.",
+      "ca": "El portador d'aquest cinyell de bronze decoratiu apareix a l'instant com la seva versió més atractiva. El canvi no és en la seva aparença sinó en com és percebut pels altres, per a bé o per a mal."
+    }
+  },
+  {
+    "id": 83,
+    "name": {
+      "en": "Bronze Clappers",
+      "ca": "Castanyoles de Bronze"
+    },
+    "description": {
+      "en": "When struck together, these two bronze bars create a piercing clap heard for miles. Those near reflexively cover their ears, possibly dropping what they hold. Some may even need to succeed a Mind Save or flee. The holder, however, is deafened for 3d10 hours and loses 1d10 Mind.",
+      "ca": "Quan es colpegen juntes, aquestes dues barres de bronze creen un soroll que es pot sentir a quilòmetres de distància. Els propers es tapen les orelles de manera reflexiva, possiblement deixant caure el que subjecten. Alguns fins i tot poden necessitar superar una Salvació de Ment o fugir. El portador, tanmateix, queda sord durant 3d10 hores i perd 1d10 de Ment."
+    }
+  },
+  {
+    "id": 84,
+    "name": {
+      "en": "Aegis Armor",
+      "ca": "Armadura Ègida"
+    },
+    "description": {
+      "en": "This cuirass permanently bonds to one's flesh and is only removable upon their death. It is highly reflective, bronze in color, and always seems to shimmer even in the dimmest light. It provides 5 Defense with no movement or sound penalty.",
+      "ca": "Aquesta cuirassa s'uneix permanentment a la carn d'algú i només es pot treure amb la seva mort. És altament reflectant, de color bronze, i sempre sembla brillar fins i tot en la llum més tènue. Proporciona 5 de Defensa sense penalització de moviment ni de so."
+    }
+  },
+  {
+    "id": 85,
+    "name": {
+      "en": "The Devil's Tip",
+      "ca": "La Punta del Diable"
+    },
+    "description": {
+      "en": "Whoever eats the tip of this small black horn has Advantage [+] on all rolls for 1 hour and loses 3 Maximum Hope. The horn is not digestible, but eventually passes through the consumer's system. Every time the horn is eaten, the consumer's growth of goat-like horns lengthen by another inch.",
+      "ca": "Qui menja la punta d'aquesta petita banya negra té avantatge [+] en totes les tirades durant 1 hora i perd 3 màximes esperances. La banya no és digerible, però finalment passa pel sistema del consumidor. Cada vegada que es menja, el creixement d'unes banyes semblants a cabres s'allarga a uns 2 cms per ració ingerida."
+    }
+  },
+  {
+    "id": 86,
+    "name": {
+      "en": "The Murder Blade",
+      "ca": "La Fulla de l’Assassinat"
+    },
+    "description": {
+      "en": "With every kill, this katana grows, getting longer but not heavier. It starts at only 6 inches in length. Hand Weapon (DMG = WIL), but every kill adds another 6 inches to its blade length and +5 to Damage.",
+      "ca": "Amb cada mort, aquesta katana creix i es fa més llarga però no més pesada. Comença sent de 15cm de longitud. Arma de mà (DMG = WIL), però per cada mort que infligeix suma 15 cm a la seva longitud de la fulla i +5 a dany."
+    }
+  },
+  {
+    "id": 87,
+    "name": {
+      "en": "Tortoise Shell Drum",
+      "ca": "Tambor de Closca de Tortuga"
+    },
+    "description": {
+      "en": "Beating this shell like a drum summons a delicious feast for all to enjoy. The summoned food vanishes if not consumed at the feast. However, there is a 15% chance of summoning a beating for all instead of a feast, reducing all present to just 1d10 Health.",
+      "ca": "Batre aquesta closca com un tambor convoca una deliciosa festa perquè tothom la gaudeixi. El menjar convocat s'esvaeix si no es consumeix a la festa. No obstant això, hi ha un 15% de probabilitat de convocar una pallissa per a tots en lloc d'una festa, reduint tot present a només 1d10 Salut."
+    }
+  },
+  {
+    "id": 88,
+    "name": {
+      "en": "A Saint's Shamrock",
+      "ca": "Trèvol d’un Sant"
+    },
+    "description": {
+      "en": "Possessing this clover brings luck. It provides Advantage [+] on four rolls per session, but the shamrock's luck must be announced prior to rolling.",
+      "ca": "Posseir aquest trèvol porta sort. Proporciona Avantatge [+] en quatre tirades per sessió, però la sort del shamrock s'ha d'anunciar abans de fer la tirada."
+    }
+  },
+  {
+    "id": 89,
+    "name": {
+      "en": "Egg of Rebirth",
+      "ca": "Ou del Renaixement"
+    },
+    "description": {
+      "en": "This decorated egg can hold small objects. Whoever hides this egg is the only one who can find it wherever and whenever they want.",
+      "ca": "Aquest ou decorat pot contenir petits objectes. Qui amaga aquest ou és l'únic que el pot trobar on i quan vulgui."
+    }
+  },
+  {
+    "id": 90,
+    "name": {
+      "en": "The Box of Tears",
+      "ca": "La Capsa de Llàgrimes"
+    },
+    "description": {
+      "en": "This indestructible small box can be filled with tears or blood. Each drop transforms into a precious stone. However, there is a 10% chance that instead of gems, the 5 giant demons who live within emerge to attack.",
+      "ca": "Aquesta petita caixa indestructible es pot omplir de llàgrimes o sang. Cada gota es transforma en una pedra preciosa. No obstant això, hi ha un 10% de probabilitat que en lloc de les gemmes, els 5 dimonis gegants que viuen dins emergeixin per atacar."
+    }
+  },
+  {
+    "id": 91,
+    "name": {
+      "en": "The Emperor's Nightingale",
+      "ca": "El Rossinyol de l’Emperador"
+    },
+    "description": {
+      "en": "This mechanical bird is worn around the neck. If used more than once a day, the twisted song it sings upsets all that hear it, requiring them to succeed a Mind Save or lose a Bit of Hope. When played in moderation (once per day) the beautiful song provides 1d10 Hope to all who hear it.",
+      "ca": "Aquest ocell mecànic es porta al voltant del coll. Si s'utilitza més d'una vegada al dia, la cançó retorçada que canta molesta tant a qui l'escolta, que requereix un éxit en un tirada de Salvació de Ment o perdre una mica d'esperança. Quan es toca amb moderació (un cop al dia) la bella cançó proporciona 1d10 Esparança a tots els que la senten."
+    }
+  },
+  {
+    "id": 92,
+    "name": {
+      "en": "The God Flower",
+      "ca": "La Flor de Déu"
+    },
+    "description": {
+      "en": "Placing this flower in someone's hair transforms them into a pangolin. The person who removes the flower from the pangolin transforms into a gibbon and the flower wilts. These transformations are likely permanent, yet speech and intelligence remain.",
+      "ca": "Posar aquesta flor en el cabell d'algú els transforma en un pangolí. La persona que treu la flor del pangolí es transforma en un gibó i la flor s'esvaeix. Aquestes transformacions són probablement permanents, però la parla i la intel·ligència romanen."
+    }
+  },
+  {
+    "id": 93,
+    "name": {
+      "en": "Rinkrank's Ladder",
+      "ca": "L’Escala de Rinkrank"
+    },
+    "description": {
+      "en": "This miniature ladder fits in the palm of a hand, but when leaned up against anything, it grows until it reaches the top. Once pulled away from the structure upon which it leans, it shrinks back to its original palm size. The ladder is rickety and dangerous to climb.",
+      "ca": "Aquesta escala en miniatura s'ajusta al palmell d'una mà, però quan s'inclina contra qualsevol cosa, creix fins que arriba a la part superior. Un cop allunyada de l'estructura sobre la qual s'inclina, es redueix de nou a la seva mida de palmell original. L'escala sempre trontolla i és perillosa per a escalar."
+    }
+  },
+  {
+    "id": 94,
+    "name": {
+      "en": "The Horseman's Head",
+      "ca": "El Cap del Genet"
+    },
+    "description": {
+      "en": "When worn in the dark, this menacing jack-o-lantern helmet lights aflame, providing 30 feet of illumination around the wearer. The sight of this terrifying head evokes fear (succeed a Mind Save or lose a Bit of Hope). This helmet can only be removed when exposed to sunlight.",
+      "ca": "Quan es porta en la foscor, aquest casc amenaçador de jack-o-lantern s'incendia, proporcionant 9m d'il·luminació al voltant de l'usuari. La visió d'aquest cap aterridor evoca la por (Éxit en Salvació de Ment estalvia l'efecte de perdre una queixalada d'esperança). Aquest casc només es pot eliminar quan s'exposa a la llum solar."
+    }
+  },
+  {
+    "id": 95,
+    "name": {
+      "en": "Tanuki Tea Kettle",
+      "ca": "Tetera Tanuki"
+    },
+    "description": {
+      "en": "This bronze tea kettle sprouts the head, appendages, and tail of a tanuki (raccoon dog) when heated or treated kindly. When treated kindly, it can be convinced to perform entertaining acrobatics.",
+      "ca": "La seva tetera de bronze brolla el cap, els apèndixs i la cua d'un tanuki quan s'escalfa o es tracta amablement. Quan es tracta amablement, es pot convèncer de realitzar acrobàcies entretingudes."
+    }
+  },
+  {
+    "id": 96,
+    "name": {
+      "en": "Dick's Knickers",
+      "ca": "Els Calçotets de Dick"
+    },
+    "description": {
+      "en": "Putting on this pair of trousers allows the wearer to enter any abode through any opening, whether chimney, pipe, or mouse hole. To do so requires the consumption of 5 meals prior to use and another 5 meals immediately after use, or else the wearer loses 1d10 to all Stats and Saves. The wearer is exhausted after use and all rolls are at Disadvantage [-] until they sleep for a full 8 hours.",
+      "ca": "Posar-se aquests pantalons permet a qui els porta entrar a qualsevol habitatge a través de qualsevol obertura, ja sigui una xemeneia, una canonada o un forat de ratolí. Per fer-ho, cal haver consumit 5 àpats abans de l'ús i 5 àpats més immediatament després; en cas contrari, l'usuari perd 1d10 en totes les seves característiques i tirades de salvació. Després de l'ús, l'usuari queda esgotat i totes les seves tirades es fan amb desavantatge [-] fins que dormi durant 8 hores seguides."
+    }
+  },
+  {
+    "id": 97,
+    "name": {
+      "en": "Rat Knocker",
+      "ca": "Picaporta de Rata"
+    },
+    "description": {
+      "en": "A door knocker which looks like a bronze rat. It magically hangs on any door. When its curled tail is used to knock, it compels the nearest living creature on the other side to ask, \"Who is it,\" knock back, or open the door.",
+      "ca": "Un pany de porta que té la forma d'una rata de bronze. Penja màgicament de qualsevol porta. Quan s'utilitza la seva cua cargolada per trucar, obliga la criatura viva més propera de l'altra banda a preguntar Qui hi ha a tornar a trucar o a obrir la porta."
+    }
+  },
+  {
+    "id": 98,
+    "name": {
+      "en": "The Soldier's Cinderbox",
+      "ca": "La Llanterna del Soldat"
+    },
+    "description": {
+      "en": "Using this magic tinderbox summons one of three dogs to obey a singular command. Each dog devours a payment prior to fulfilling your wish or they turn on you. Dog 1 is the size of a lion, devours 25 Coin, and requires the owner to succeed a Mind Save or lose 1d10 Hope. Dog 2 is the size of an elephant, devours 50 Coin, and requires the owner to succeed a Mind Save or lose 2d10 Hope. Dog 3 is the size of an inn, devours 100 Coin, and requires the owner to succeed a Mind Save [-] or lose 3d10 Hope.",
+      "ca": "Utilitzar aquesta caixa de foc màgica invoca un dels tres gossos perquè obeeixi una ordre singular. Cada gos devora un pagament abans de complir el teu desig o es giren contra tu. El gos 1 és de la mida d'un lleó, devora 25 Monedes, i requereix que el propietari superi una Salvació de Ment o perdi 1d10 d'Esperança. El gos 2 és de la mida d'un elefant, devora 50 Monedes, i requereix una Salvació de Ment o perdre 2d10 d'Esperança. El gos 3 és de la mida d'una fonda, devora 100 Monedes, i requereix una Salvació de Ment [-] o perdre 3d10 d'Esperança."
+    }
+  },
+  {
+    "id": 99,
+    "name": {
+      "en": "The Nettle Shroud",
+      "ca": "El Sudari d’Ortigues"
+    },
+    "description": {
+      "en": "This burial sheet is somehow spun of nettles. Once someone is fully wrapped in this sheet three times around, they perish. Touching this sheet causes the loss of 1d10 Maximum Hope.",
+      "ca": "Aquest llençol funerari està d'alguna manera teixit amb ortigues. Un cop algú està completament embolicat en aquest llençol tres voltes, mor. Tocar aquest llençol provoca la pèrdua d'1d10 d'Esperança Màxima."
+    }
+ },
+  {
+    "id": 99,
+    "name": {
+      "en": "The Nettle Shroud",
+      "ca": "El Sudari d’Ortigues"
+    },
+    "description": {
+      "en": "This burial sheet is somehow spun of nettles. Once someone is fully wrapped in this sheet three times around, they perish. Touching this sheet causes the loss of 1d10 Maximum Hope.",
+      "ca": "Aquest llençol funerari està d'alguna manera teixit amb ortigues. Un cop algú està completament embolicat en aquest llençol tres voltes, mor. Tocar aquest llençol provoca la pèrdua d'1d10 d'Esperança Màxima."
+    }
+ },
+  {
+    "id": 99,
+    "name": {
+      "en": "The Nettle Shroud",
+      "ca": "El Sudari d’Ortigues"
+    },
+    "description": {
+      "en": "This burial sheet is somehow spun of nettles. Once someone is fully wrapped in this sheet three times around, they perish. Touching this sheet causes the loss of 1d10 Maximum Hope.",
+      "ca": "Aquest llençol funerari està d'alguna manera teixit amb ortigues. Un cop algú està completament embolicat en aquest llençol tres voltes, mor. Tocar aquest llençol provoca la pèrdua d'1d10 d'Esperança Màxima."
+    }
+  }
+]
